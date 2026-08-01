@@ -47,11 +47,28 @@ const saveFavourites = (favs) => saveToStorage(STORAGE_KEYS.favourites, favs);
 const loadCustomChannels = () => loadFromStorage(STORAGE_KEYS.custom);
 const saveCustomChannels = (items) => saveToStorage(STORAGE_KEYS.custom, items);
 
+// Shared across both the catalog fetch and the now-playing poll, which both
+// hit this same endpoint -- a short TTL collapses simultaneous/rapid-fire
+// calls (e.g. switching between several SomaFM stations in quick succession)
+// into one request instead of one each.
+let _somaFmCache = null; // { timestamp, data }
+const SOMAFM_CACHE_TTL_MS = 10000;
+
+async function fetchSomaFMData() {
+  const now = Date.now();
+  if (_somaFmCache && now - _somaFmCache.timestamp < SOMAFM_CACHE_TTL_MS) {
+    return _somaFmCache.data;
+  }
+  const res = await fetch("https://somafm.com/channels.json");
+  if (!res.ok) throw new Error(`SomaFM unreachable (${res.status})`);
+  const data = await res.json();
+  _somaFmCache = { timestamp: now, data };
+  return data;
+}
+
 async function fetchSomaFMChannels() {
   try {
-    const res = await fetch("https://somafm.com/channels.json");
-    if (!res.ok) return [];
-    const data = await res.json();
+    const data = await fetchSomaFMData();
     return (data.channels || []).map((c) => ({
       id: c.id,
       name: c.title,
@@ -126,7 +143,6 @@ function radioApp() {
     query: "",
     loading: true,
     nowPlaying: null,
-    pendingItem: null,
     nowPlayingTrack: null,
     isPlaying: false,
     volume: 70,
@@ -141,6 +157,7 @@ function radioApp() {
     _resolvedCache: new Map(),
     _candidates: [],
     _candidateIndex: 0,
+    _errorListener: null,
     _trackPollTimer: null,
     _errorTimer: null,
 
@@ -218,8 +235,8 @@ function radioApp() {
       return "No stations in this category.";
     },
 
-    isFavourite(key) {
-      return this.favouriteItems.some((f) => f.key === key);
+    isFavourite(network, key) {
+      return this.favouriteItems.some((f) => f.key === key && f.network === network);
     },
 
     isNowPlaying(item) {
@@ -232,9 +249,9 @@ function radioApp() {
     },
 
     toggleFavourite(item) {
-      if (this.isFavourite(item.key)) {
-        saveFavourites(loadFavourites().filter((f) => f.key !== item.key));
-        this.favouriteItems = this.favouriteItems.filter((f) => f.key !== item.key);
+      if (this.isFavourite(item.network, item.key)) {
+        saveFavourites(loadFavourites().filter((f) => !(f.key === item.key && f.network === item.network)));
+        this.favouriteItems = this.favouriteItems.filter((f) => !(f.key === item.key && f.network === item.network));
       } else {
         const favs = loadFavourites();
         favs.push({ key: item.key, network: item.network, name: item.name });
@@ -249,39 +266,54 @@ function radioApp() {
     async resolveStreamUrl(item) {
       const url = item.playlist_url;
       if (!url) return [];
-      if (this._resolvedCache.has(item.key)) return this._resolvedCache.get(item.key);
+      const cacheKey = `${item.network}:${item.key}`;
+      if (this._resolvedCache.has(cacheKey)) return this._resolvedCache.get(cacheKey);
 
-      let candidates = [url];
       const fmt = playlistFormat(url);
-      if (fmt) {
-        try {
-          const res = await fetch(url);
-          if (res.ok) {
-            const parsed = parsePlaylistUrls(await res.text(), fmt);
-            if (parsed.length) candidates = parsed;
-          }
-        } catch (e) {
-          // fall back to the original url unchanged
-        }
+      if (!fmt) {
+        this._resolvedCache.set(cacheKey, [url]);
+        return [url];
       }
 
-      this._resolvedCache.set(item.key, candidates);
+      // A .pls/.m3u wrapper file isn't itself playable audio, so if we can't
+      // parse it into real stream URLs there's nothing safe to fall back to.
+      let candidates = [];
+      try {
+        const res = await fetch(url);
+        if (res.ok) candidates = parsePlaylistUrls(await res.text(), fmt);
+      } catch (e) {
+        // leave candidates empty
+      }
+
+      // Only cache a successful resolution -- a transient failure should be
+      // retryable on the next click rather than permanently "no stream".
+      if (candidates.length) this._resolvedCache.set(cacheKey, candidates);
       return candidates;
     },
 
     async play(item) {
-      this.pendingItem = item;
-      this._candidates = await this.resolveStreamUrl(item);
-      if (!this._candidates.length) {
+      const candidates = await this.resolveStreamUrl(item);
+      if (!candidates.length) {
         this.flashError(`No stream available for ${item.name}.`);
         return;
       }
+      this._candidates = candidates;
       this._candidateIndex = 0;
       this._playCurrentCandidate(item);
     },
 
+    // Each attempt gets its own one-shot error listener instead of a single
+    // static handler shared across every play() call. Removing the previous
+    // attempt's listener before assigning a new src means a stray `error`
+    // event from an already-superseded (aborted) load has nothing left to
+    // fire on, so it can't be misattributed to the newly-selected station --
+    // see the "rapid channel switching" race this replaced.
     _playCurrentCandidate(item) {
       const audio = this.$refs.audio;
+      audio.removeEventListener("error", this._errorListener);
+      this._errorListener = () => this._handleCandidateError(item);
+      audio.addEventListener("error", this._errorListener, { once: true });
+
       audio.src = this._candidates[this._candidateIndex];
       audio.volume = this.volume / 100;
       audio
@@ -292,10 +324,22 @@ function radioApp() {
           this.startTrackPolling(item);
         })
         .catch(() => {
-          // The <audio> element's `error` event (onAudioError) is the
+          // The <audio> element's `error` event (the listener above) is the
           // reliable signal for stream failures and drives mirror fallback;
           // this just swallows the play() rejection itself.
         });
+    },
+
+    _handleCandidateError(item) {
+      this._candidateIndex += 1;
+      if (this._candidateIndex < this._candidates.length) {
+        this._playCurrentCandidate(item);
+        return;
+      }
+
+      this.isPlaying = false;
+      this.stopTrackPolling();
+      this.flashError(`Lost signal — couldn't play ${item.name}.`);
     },
 
     stop() {
@@ -322,12 +366,7 @@ function radioApp() {
 
     async fetchNowPlayingTrack(item) {
       try {
-        const res = await fetch("https://somafm.com/channels.json");
-        if (!res.ok) {
-          this.nowPlayingTrack = null;
-          return;
-        }
-        const data = await res.json();
+        const data = await fetchSomaFMData();
         const channel = (data.channels || []).find((c) => c.id === item.key);
         this.nowPlayingTrack = channel && channel.lastPlaying ? { track: channel.lastPlaying } : null;
       } catch (e) {
@@ -344,7 +383,7 @@ function radioApp() {
     },
 
     isInCatalog(item) {
-      return this.channels.some((c) => c.key === item.key);
+      return this.channels.some((c) => c.key === item.key && c.network === item.network);
     },
 
     async searchBrowse() {
@@ -399,37 +438,22 @@ function radioApp() {
     addCustomChannel(item) {
       const saved = { ...item, source: "custom" };
       const custom = loadCustomChannels();
-      if (custom.some((c) => c.key === saved.key)) return;
+      if (custom.some((c) => c.key === saved.key && c.network === saved.network)) return;
       custom.push(saved);
       saveCustomChannels(custom);
-      if (!this.channels.some((c) => c.key === saved.key)) this.channels.push(saved);
+      if (!this.channels.some((c) => c.key === saved.key && c.network === saved.network)) this.channels.push(saved);
     },
 
     removeCustomChannel(item) {
       const custom = loadCustomChannels();
-      const remaining = custom.filter((c) => c.key !== item.key);
+      const remaining = custom.filter((c) => !(c.key === item.key && c.network === item.network));
       if (remaining.length === custom.length) return;
       saveCustomChannels(remaining);
 
-      this.channels = this.channels.filter((c) => !(c.key === item.key && c.source === "custom"));
-      if (this.nowPlaying?.key === item.key) this.stop();
-      this.favouriteItems = this.favouriteItems.filter((f) => f.key !== item.key);
-      saveFavourites(loadFavourites().filter((f) => f.key !== item.key));
-    },
-
-    onAudioError() {
-      const failed = this.pendingItem || this.nowPlaying;
-      if (!failed) return;
-
-      this._candidateIndex += 1;
-      if (this._candidateIndex < this._candidates.length) {
-        this._playCurrentCandidate(failed);
-        return;
-      }
-
-      this.isPlaying = false;
-      this.stopTrackPolling();
-      this.flashError(`Lost signal — couldn't play ${failed.name}.`);
+      this.channels = this.channels.filter((c) => !(c.key === item.key && c.network === item.network && c.source === "custom"));
+      if (this.nowPlaying?.key === item.key && this.nowPlaying?.network === item.network) this.stop();
+      this.favouriteItems = this.favouriteItems.filter((f) => !(f.key === item.key && f.network === item.network));
+      saveFavourites(loadFavourites().filter((f) => !(f.key === item.key && f.network === item.network)));
     },
 
     flashError(message) {

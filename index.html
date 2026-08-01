@@ -7,8 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<!-- cdn.tailwindcss.com sends no Access-Control-Allow-Origin header, so a
+     crossorigin+integrity (SRI) attribute pair blocks it from executing
+     rather than verifying it -- pinning the version is the furthest this
+     particular CDN's support goes. -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" integrity="sha384-hlhTcK8D1Pj0594UWVQ6V40KGnB4Y8+Pf6mov3DVLV2lr0PqHuq/x1lVg/hZn7jt" crossorigin="anonymous" />
 <script>
   tailwind.config = {
     theme: {
@@ -32,8 +36,8 @@
     },
   }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/+uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js" integrity="sha384-iZD2X8o1Zdq0HR5H/7oa8W30WS4No+zWCKUPD7fHRay9I1Gf+C4F8sVmw7zec1wW" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-ink text-paper font-body min-h-screen flex flex-col overflow-x-hidden" x-data="radioApp()" x-init="init()">
@@ -109,8 +113,8 @@
           <button
             @click.stop="toggleFavourite(item)"
             class="favourite-btn text-lg leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-panel2 transition-colors"
-            :class="isFavourite(item.key) ? 'text-amber' : 'text-paperdim/30 group-hover:text-paperdim'"
-            :aria-label="isFavourite(item.key) ? 'Remove favourite' : 'Add favourite'"
+            :class="isFavourite(item.network, item.key) ? 'text-amber' : 'text-paperdim/30 group-hover:text-paperdim'"
+            :aria-label="isFavourite(item.network, item.key) ? 'Remove favourite' : 'Add favourite'"
           >★</button>
         </li>
       </template>
@@ -139,7 +143,7 @@
     <button
       @click="nowPlaying && toggleFavourite(nowPlaying)"
       class="w-9 h-9 flex items-center justify-center rounded hover:bg-panel2 transition-colors text-lg"
-      :class="nowPlaying && isFavourite(nowPlaying.key) ? 'text-amber' : 'text-paperdim'"
+      :class="nowPlaying && isFavourite(nowPlaying.network, nowPlaying.key) ? 'text-amber' : 'text-paperdim'"
       :disabled="!nowPlaying"
     >★</button>
 
@@ -321,7 +325,7 @@
     x-text="errorMessage"
   ></div>
 
-  <audio x-ref="audio" @error="onAudioError()" @ended="isPlaying = false" class="hidden"></audio>
+  <audio x-ref="audio" @ended="isPlaying = false" class="hidden"></audio>
 
   <script src="app.js"></script>
 </body>
