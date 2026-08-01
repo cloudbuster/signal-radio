@@ -108,6 +108,21 @@ function titleCase(s) {
   return s.replace(/\w\S*/g, (w) => w[0].toUpperCase() + w.slice(1).toLowerCase());
 }
 
+// Typo-tolerant fallback for when a plain substring search finds nothing --
+// e.g. "elctro" or "jaz". Only runs on that near-miss case, so re-indexing
+// per call is cheap at this catalog size.
+function fuzzySearch(source, query) {
+  const fuse = new Fuse(source, {
+    keys: [
+      { name: "name", weight: 0.7 },
+      { name: "description", weight: 0.3 },
+    ],
+    threshold: 0.35,
+    ignoreLocation: true,
+  });
+  return fuse.search(query).map((r) => r.item);
+}
+
 function radioApp() {
   return {
     networks: NETWORKS,
@@ -207,7 +222,10 @@ function radioApp() {
       const byName = source.filter((c) => matchesText(c.name.toLowerCase()));
       if (byName.length > 0) return byName;
 
-      return source.filter((c) => c.description && matchesText(c.description.toLowerCase()));
+      const byDescription = source.filter((c) => c.description && matchesText(c.description.toLowerCase()));
+      if (byDescription.length > 0) return byDescription;
+
+      return fuzzySearch(source, expanded ? `${this.query.trim()} ${expanded}` : this.query.trim());
     },
 
     emptyMessage() {
