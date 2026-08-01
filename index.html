@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal — Radio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#14130F',
+          panel: '#1E1C16',
+          panel2: '#2A271E',
+          paper: '#EDE6D6',
+          paperdim: '#A89C82',
+          signal: '#8FBC6B',
+          amber: '#E8A33D',
+          staticred: '#C9554F',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders"', 'sans-serif'],
+          body: ['"IBM Plex Sans"', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-ink text-paper font-body min-h-screen flex flex-col overflow-x-hidden" x-data="radioApp()" x-init="init()">
+
+  <!-- Header: wordmark + search -->
+  <header class="border-b border-panel2 px-4 sm:px-6 py-3 flex items-center gap-4 sticky top-0 bg-ink/95 backdrop-blur z-20">
+    <h1 class="font-display font-800 text-2xl sm:text-3xl tracking-tight text-paper select-none">
+      SIGNAL<span class="text-amber">.</span>
+    </h1>
+    <button
+      @click="browseOpen = true"
+      class="preset-btn text-paperdim hover:text-paper ml-auto"
+      title="Browse & add stations"
+    >+ BROWSE</button>
+    <button
+      @click="helpOpen = true"
+      class="preset-btn text-paperdim hover:text-paper"
+      title="Help"
+    >?</button>
+    <div class="max-w-md w-full sm:w-64">
+      <label class="input-tune flex items-center gap-2 border-b-2 border-panel2 focus-within:border-amber transition-colors px-1 py-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-paperdim shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input
+          type="text"
+          x-model="query"
+          placeholder="tune in…"
+          class="bg-transparent outline-none w-full font-mono text-sm placeholder:text-paperdim text-paper"
+        >
+      </label>
+    </div>
+  </header>
+
+  <!-- Preset rail -->
+  <nav class="preset-rail min-w-0 px-4 sm:px-6 py-3 border-b border-panel2 overflow-x-auto">
+    <div class="flex items-end gap-2 min-w-max">
+      <button
+        @click="selectCategory('all_networks')"
+        :class="category === 'all_networks' ? 'preset-btn preset-btn-active' : 'preset-btn'"
+      >ALL</button>
+
+      <template x-for="net in networks" :key="net.slug">
+        <button
+          @click="selectCategory(net.slug)"
+          :class="category === net.slug ? 'preset-btn preset-btn-active' : 'preset-btn'"
+          :title="net.display_name"
+          x-text="presetLabel(net)"
+        ></button>
+      </template>
+
+      <button
+        @click="selectCategory('favourite')"
+        :class="category === 'favourite' ? 'preset-btn preset-btn-active text-amber' : 'preset-btn text-amber'"
+      >★ FAVES</button>
+    </div>
+    <div class="tick-scale mt-1.5"></div>
+  </nav>
+
+  <!-- Channel list -->
+  <main class="flex-1 overflow-y-auto px-2 sm:px-4 pb-28">
+    <template x-if="!loading && filteredChannels().length === 0">
+      <p class="text-paperdim font-mono text-sm px-4 py-10 text-center" x-text="emptyMessage()"></p>
+    </template>
+
+    <template x-if="loading">
+      <p class="text-paperdim font-mono text-sm px-4 py-10 text-center">acquiring signal…</p>
+    </template>
+
+    <ul class="divide-y divide-panel2">
+      <template x-for="item in filteredChannels()" :key="item.network + ':' + item.key">
+        <li
+          class="channel-row group flex items-center gap-3 px-2 sm:px-3 py-2.5 cursor-pointer"
+          :class="isNowPlaying(item) ? 'channel-row-active' : ''"
+          @click="play(item)"
+        >
+          <span class="vu-bar" :class="isNowPlaying(item) ? 'vu-bar-live' : ''"></span>
+
+          <div class="flex-1 min-w-0">
+            <p class="flex items-center gap-1.5 truncate text-[0.95rem] font-medium">
+              <span x-text="item.name"></span>
+              <span x-show="isCustom(item)" class="shrink-0 text-[0.6rem] font-mono uppercase tracking-wide px-1 py-0.5 rounded bg-signal/20 text-signal border border-signal/30">my pick</span>
+            </p>
+            <p class="text-xs text-paperdim font-mono truncate" x-text="item.description || ''"></p>
+          </div>
+
+          <span class="text-xs font-mono text-paperdim uppercase tracking-wide hidden sm:inline" x-text="item.network"></span>
+
+          <button
+            x-show="isCustom(item)"
+            @click.stop="removeCustomChannel(item)"
+            class="text-xs font-mono w-7 h-7 flex items-center justify-center rounded hover:bg-staticred/20 hover:text-staticred text-paperdim/30 group-hover:text-paperdim transition-colors"
+            title="Remove from my stations"
+          >✕</button>
+
+          <button
+            @click.stop="toggleFavourite(item)"
+            class="favourite-btn text-lg leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-panel2 transition-colors"
+            :class="isFavourite(item.key) ? 'text-amber' : 'text-paperdim/30 group-hover:text-paperdim'"
+            :aria-label="isFavourite(item.key) ? 'Remove favourite' : 'Add favourite'"
+          >★</button>
+        </li>
+      </template>
+    </ul>
+  </main>
+
+  <!-- Now playing console bar -->
+  <footer class="now-playing fixed bottom-0 left-0 right-0 border-t border-panel2 bg-panel px-4 sm:px-6 py-3 flex items-center gap-4 z-30">
+    <div class="flex items-center gap-3 min-w-0 flex-1">
+      <span class="vu-dot" :class="isPlaying ? 'vu-dot-live' : ''"></span>
+      <div class="min-w-0">
+        <p class="text-[0.65rem] text-paperdim font-mono uppercase tracking-widest leading-none">
+          <span x-text="isPlaying ? 'on air' : 'standby'"></span>
+        </p>
+        <p class="font-display font-700 text-lg sm:text-xl truncate leading-tight" x-text="nowPlayingLabel()"></p>
+        <p x-show="nowPlayingTrack" class="text-xs text-paperdim font-mono truncate leading-tight" x-text="nowPlayingTrack ? nowPlayingTrack.track : ''"></p>
+      </div>
+    </div>
+
+    <div class="hidden sm:flex items-center gap-2 w-36">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-paperdim shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M11 5 6 9H2v6h4l5 4V5zM16.5 12a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+      <input type="range" min="0" max="100" x-model.number="volume" @input="setVolume()" class="range-tuner w-full" :style="`--fill-frac: ${volume / 100}`">
+      <span class="font-mono text-xs text-paperdim w-9 text-right shrink-0 tabular-nums" x-text="volume + '%'"></span>
+    </div>
+
+    <button
+      @click="nowPlaying && toggleFavourite(nowPlaying)"
+      class="w-9 h-9 flex items-center justify-center rounded hover:bg-panel2 transition-colors text-lg"
+      :class="nowPlaying && isFavourite(nowPlaying.key) ? 'text-amber' : 'text-paperdim'"
+      :disabled="!nowPlaying"
+    >★</button>
+
+    <button
+      @click="stop()"
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-staticred/20 text-staticred hover:bg-staticred/30 transition-colors disabled:opacity-30 disabled:hover:bg-staticred/20"
+      :disabled="!isPlaying"
+      aria-label="Stop"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>
+    </button>
+  </footer>
+
+  <!-- Help modal -->
+  <div
+    x-show="helpOpen"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-100"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4"
+    @keydown.escape.window="helpOpen = false"
+  >
+    <div class="absolute inset-0 bg-ink/80 backdrop-blur-sm" @click="helpOpen = false"></div>
+    <div class="relative bg-panel border border-panel2 rounded-lg w-full max-w-lg max-h-[80vh] overflow-y-auto shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-panel2 sticky top-0 bg-panel">
+        <h2 class="font-display font-700 text-xl tracking-tight">SIGNAL<span class="text-amber">.</span> HELP</h2>
+        <button @click="helpOpen = false" class="w-8 h-8 flex items-center justify-center rounded hover:bg-panel2 text-paperdim hover:text-paper transition-colors font-mono">✕</button>
+      </div>
+      <div class="px-6 py-5 space-y-6 font-mono text-sm">
+
+        <section>
+          <h3 class="text-amber uppercase tracking-widest text-xs mb-3">Playing</h3>
+          <ul class="space-y-1.5 text-paperdim">
+            <li><span class="text-paper">Click a channel</span> — tune in</li>
+            <li><span class="text-paper">Click again</span> — stop</li>
+            <li><span class="text-paper">★</span> — add/remove from favourites</li>
+            <li><span class="text-paper">Volume slider</span> — bottom bar, desktop only</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-amber uppercase tracking-widest text-xs mb-3">Navigating</h3>
+          <ul class="space-y-1.5 text-paperdim">
+            <li><span class="text-paper">Preset rail</span> — filter by network (ALL, SF, RB, YLE)</li>
+            <li><span class="text-paper">★ FAVES</span> — your saved stations</li>
+            <li><span class="text-paper">Search bar</span> — filter channels by name in the current view</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-amber uppercase tracking-widest text-xs mb-3">Custom stations</h3>
+          <ul class="space-y-1.5 text-paperdim">
+            <li><span class="text-paper">+ BROWSE</span> — search radio-browser.info by name or tag</li>
+            <li><span class="text-paper">+ add</span> — saves a station to your personal list</li>
+            <li><span class="text-paper">my pick</span> badge — marks stations you added</li>
+            <li><span class="text-paper">✕</span> — removes a custom station</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-amber uppercase tracking-widest text-xs mb-3">Networks</h3>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-paperdim">
+            <div><span class="text-paper">SF</span> — SomaFM</div>
+            <div><span class="text-paper">RB</span> — Radio Browser curated + your picks</div>
+            <div><span class="text-paper">YLE</span> — Finnish public radio</div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="text-amber uppercase tracking-widest text-xs mb-3">About</h3>
+          <p class="text-paperdim">Signal is a static page — no server, no account. Favourites and stations you add live only in this browser (<span class="text-paper">localStorage</span>), so they won't follow you to another device or show up for anyone else using this same page.</p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Browse drawer -->
+  <div
+    x-show="browseOpen"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    class="fixed inset-0 z-50 flex justify-end"
+    @keydown.escape.window="browseOpen = false"
+  >
+    <!-- backdrop -->
+    <div class="absolute inset-0 bg-ink/70 backdrop-blur-sm" @click="browseOpen = false"></div>
+
+    <!-- panel -->
+    <div
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="translate-x-full"
+      x-transition:enter-end="translate-x-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="translate-x-0"
+      x-transition:leave-end="translate-x-full"
+      class="relative w-full max-w-md bg-panel border-l border-panel2 flex flex-col h-full overflow-hidden"
+    >
+      <!-- drawer header -->
+      <div class="flex items-center justify-between px-5 py-4 border-b border-panel2 shrink-0">
+        <h2 class="font-display font-700 text-xl tracking-tight">BROWSE STATIONS</h2>
+        <button @click="browseOpen = false" class="w-8 h-8 flex items-center justify-center rounded hover:bg-panel2 text-paperdim hover:text-paper transition-colors font-mono">✕</button>
+      </div>
+
+      <!-- search controls -->
+      <div class="px-5 py-4 border-b border-panel2 shrink-0 space-y-2">
+        <input
+          type="text"
+          x-model="browseQuery"
+          @keydown.enter="searchBrowse()"
+          placeholder="station name…"
+          class="w-full bg-ink border border-panel2 focus:border-amber rounded px-3 py-2 font-mono text-sm outline-none placeholder:text-paperdim text-paper transition-colors"
+        >
+        <div class="flex gap-2">
+          <input
+            type="text"
+            x-model="browseTag"
+            @keydown.enter="searchBrowse()"
+            placeholder="tag (e.g. jazz, techno, talk)…"
+            class="flex-1 bg-ink border border-panel2 focus:border-amber rounded px-3 py-2 font-mono text-sm outline-none placeholder:text-paperdim text-paper transition-colors"
+          >
+          <button
+            @click="searchBrowse()"
+            :disabled="browsing"
+            class="preset-btn disabled:opacity-50"
+          >
+            <span x-show="!browsing">SEARCH</span>
+            <span x-show="browsing">…</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- results -->
+      <div class="flex-1 overflow-y-auto">
+        <template x-if="!browsing && browseResults.length === 0 && (browseQuery || browseTag)">
+          <p class="text-paperdim font-mono text-sm px-5 py-8 text-center">No stations found.</p>
+        </template>
+        <template x-if="!browseQuery && !browseTag && browseResults.length === 0">
+          <p class="text-paperdim font-mono text-sm px-5 py-8 text-center">Search by name or tag to discover stations.</p>
+        </template>
+
+        <ul class="divide-y divide-panel2">
+          <template x-for="item in browseResults" :key="item.key">
+            <li
+              class="channel-row group flex items-center gap-3 px-5 py-3 cursor-pointer"
+              :class="isNowPlaying(item) ? 'channel-row-active' : ''"
+              @click="play(item)"
+            >
+              <span class="vu-bar shrink-0" :class="isNowPlaying(item) ? 'vu-bar-live' : ''"></span>
+              <div class="flex-1 min-w-0">
+                <p class="truncate text-sm font-medium" x-text="item.name"></p>
+                <p class="text-xs text-paperdim font-mono truncate" x-text="item.description || ''"></p>
+              </div>
+              <button
+                @click.stop="addCustomChannel(item)"
+                :disabled="isInCatalog(item)"
+                class="shrink-0 preset-btn text-xs disabled:opacity-40 disabled:cursor-default"
+                :class="isInCatalog(item) ? 'text-signal border-signal/30' : ''"
+                x-text="isInCatalog(item) ? '✓ added' : '+ add'"
+              ></button>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error toast -->
+  <div
+    x-show="errorMessage"
+    x-transition
+    class="fixed top-16 right-4 z-40 bg-staticred/15 border border-staticred text-staticred font-mono text-sm px-4 py-2 rounded shadow-lg max-w-xs"
+    x-text="errorMessage"
+  ></div>
+
+  <audio x-ref="audio" @error="onAudioError()" @ended="isPlaying = false" class="hidden"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

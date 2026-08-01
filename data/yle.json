@@ -1,0 +1,47 @@
+[
+  {
+    "id": "yle-radio1",
+    "name": "Yle Radio 1",
+    "key": "yle-radio1",
+    "item_type": "radio",
+    "network": "yle",
+    "description": "Culture & talk · Finland",
+    "playlist_url": "https://icecast.live.yle.fi/radio/YleRadio1Hifi/icecast.audio"
+  },
+  {
+    "id": "yle-x",
+    "name": "YleX",
+    "key": "yle-x",
+    "item_type": "radio",
+    "network": "yle",
+    "description": "Youth/pop music · Finland",
+    "playlist_url": "https://icecast.live.yle.fi/radio/YleX/icecast.audio"
+  },
+  {
+    "id": "yle-radiosuomi-helsinki",
+    "name": "Yle Radio Suomi, Helsinki",
+    "key": "yle-radiosuomi-helsinki",
+    "item_type": "radio",
+    "network": "yle",
+    "description": "General/regional · Finland",
+    "playlist_url": "https://icecast.live.yle.fi/radio/YleRS/icecast.audio"
+  },
+  {
+    "id": "yle-klassinen",
+    "name": "Yle Klassinen",
+    "key": "yle-klassinen",
+    "item_type": "radio",
+    "network": "yle",
+    "description": "Classical · Finland",
+    "playlist_url": "https://icecast.live.yle.fi/radio/YleKlassinen/icecast.audio"
+  },
+  {
+    "id": "yle-vega-osterbotten",
+    "name": "Yle Vega Österbotten",
+    "key": "yle-vega-osterbotten",
+    "item_type": "radio",
+    "network": "yle",
+    "description": "Swedish-language · Finland",
+    "playlist_url": "https://icecast.live.yle.fi/radio/YleVegaOsterbotten/icecast.audio"
+  }
+]

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "c603e84e-47b8-44cb-bd23-f0f007e8d812",
+    "name": "france info (lofi)",
+    "key": "c603e84e-47b8-44cb-bd23-f0f007e8d812",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Lofi \u00b7 France",
+    "playlist_url": "http://direct.franceinfo.fr/live/franceinfo-lofi.mp3"
+  },
+  {
+    "id": "4260f1f5-d5b3-44d5-9666-355da4da0b21",
+    "name": "Lofi 24/7",
+    "key": "4260f1f5-d5b3-44d5-9666-355da4da0b21",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Lofi \u00b7 The United States Of America",
+    "playlist_url": "http://usa9.fastcast4u.com/proxy/jamz?mp=/1"
+  },
+  {
+    "id": "9af1536b-1acd-11ea-a620-52543be04c81",
+    "name": "Nightwave Plaza OPUS 96",
+    "key": "9af1536b-1acd-11ea-a620-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Lofi \u00b7 Japan",
+    "playlist_url": "http://radio.plaza.one/opus"
+  },
+  {
+    "id": "963f5372-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Caprice - Retrowave",
+    "key": "963f5372-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Synthwave \u00b7 The Russian Federation",
+    "playlist_url": "http://79.120.39.202:9125/"
+  },
+  {
+    "id": "laut-fm-synthpop",
+    "name": "Laut.FM SynthPop",
+    "key": "laut-fm-synthpop",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Synthwave \u00b7 Germany",
+    "playlist_url": "http://stream.laut.fm/synthpop"
+  },
+  {
+    "id": "96394377-0601-11e8-ae97-52543be04c81",
+    "name": "Synthradio",
+    "key": "96394377-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Synthwave \u00b7 The Russian Federation",
+    "playlist_url": "http://77.51.212.205:8005/live192"
+  },
+  {
+    "id": "caaa4c5a-16c8-11e9-a80b-52543be04c81",
+    "name": "Chocolate FM",
+    "key": "caaa4c5a-16c8-11e9-a80b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Reggae \u00b7 Spain",
+    "playlist_url": "http://streaming5.elitecomunicacion.es:8082/live.mp3"
+  },
+  {
+    "id": "960ebcf5-0601-11e8-ae97-52543be04c81",
+    "name": "La Grosse Radio Reggae",
+    "key": "960ebcf5-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Reggae \u00b7 France",
+    "playlist_url": "http://hd.lagrosseradio.info/lagrosseradio-reggae-192.mp3"
+  },
+  {
+    "id": "44750f0f-09e0-11e9-a80b-52543be04c81",
+    "name": "Alpha Boys School Radio",
+    "key": "44750f0f-09e0-11e9-a80b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Reggae \u00b7 Jamaica",
+    "playlist_url": "http://alphaboys-live.streamguys1.com/alphaboys.mp3"
+  },
+  {
+    "id": "96102c22-0601-11e8-ae97-52543be04c81",
+    "name": "Jazz Radio Blues",
+    "key": "96102c22-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Blues \u00b7 France",
+    "playlist_url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
+  },
+  {
+    "id": "b9e1f76e-41fd-11e9-aa55-52543be04c81",
+    "name": "Blues Radio",
+    "key": "b9e1f76e-41fd-11e9-aa55-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Blues \u00b7 Greece",
+    "playlist_url": "http://cast3.radiohost.ovh:8352/"
+  },
+  {
+    "id": "9617ccb4-0601-11e8-ae97-52543be04c81",
+    "name": "1.FM - Blues Radio",
+    "key": "9617ccb4-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Blues \u00b7 Switzerland",
+    "playlist_url": "http://strm112.1.fm/blues_mobile_mp3"
+  },
+  {
+    "id": "960f2a8b-0601-11e8-ae97-52543be04c81",
+    "name": "Celtic Music Radio",
+    "key": "960f2a8b-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Celtic \u00b7 The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "http://stream.celticmusicradio.net:8000/celticmusic.mp3"
+  },
+  {
+    "id": "db747080-d906-484c-9132-4b289dbb9c26",
+    "name": "Irish Pub Radio",
+    "key": "db747080-d906-484c-9132-4b289dbb9c26",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Celtic \u00b7 Ireland",
+    "playlist_url": "http://solid24.streamupsolutions.com:8026/stream"
+  },
+  {
+    "id": "960dc45b-0601-11e8-ae97-52543be04c81",
+    "name": "RMF Celtic",
+    "key": "960dc45b-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Celtic \u00b7 Poland",
+    "playlist_url": "http://31.192.216.7/CELTIC"
+  },
+  {
+    "id": "962a7d59-0601-11e8-ae97-52543be04c81",
+    "name": "1.FM - Movie Soundtrack",
+    "key": "962a7d59-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Soundtrack \u00b7 Switzerland",
+    "playlist_url": "http://strm112.1.fm/moviesoundtracks_mobile_mp3"
+  },
+  {
+    "id": "9f9cc220-3462-11e8-bb9b-52543be04c81",
+    "name": "Retro PC GAME MUSIC Streaming Radio",
+    "key": "9f9cc220-3462-11e8-bb9b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Soundtrack \u00b7 Japan",
+    "playlist_url": "http://gyusyabu.ddo.jp:8000/"
+  },
+  {
+    "id": "streamingsoundtracks-hi",
+    "name": "StreamingSoundtracks.com",
+    "key": "streamingsoundtracks-hi",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Soundtrack \u00b7 United States Of America",
+    "playlist_url": "http://hi5.streamingsoundtracks.com/"
+  },
+  {
+    "id": "963fb390-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Nova",
+    "key": "963fb390-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "World \u00b7 France",
+    "playlist_url": "http://novazz.ice.infomaniak.ch/novazz-128.mp3"
+  },
+  {
+    "id": "9605ced9-0601-11e8-ae97-52543be04c81",
+    "name": "WDR COSMO",
+    "key": "9605ced9-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "World \u00b7 Germany",
+    "playlist_url": "http://wdr-cosmo-live.icecast.wdr.de/wdr/cosmo/live/mp3/128/stream.mp3"
+  },
+  {
+    "id": "a31ff324-2ae1-11e9-a35e-52543be04c81",
+    "name": "Radyo Voyage",
+    "key": "a31ff324-2ae1-11e9-a35e-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "World \u00b7 T\u00fcrkiye",
+    "playlist_url": "http://voyagewmp.radyotvonline.com/;stream.mp3"
+  },
+  {
+    "id": "97d830f4-c35f-11e9-8502-52543be04c81",
+    "name": "Alternative Radio",
+    "key": "97d830f4-c35f-11e9-8502-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "World \u00b7 France",
+    "playlist_url": "https://www.radioking.com/play/alternative-radio-1"
+  },
+  {
+    "id": "648b2abd-92a0-11e9-a605-52543be04c81",
+    "name": "Dance Wave!",
+    "key": "648b2abd-92a0-11e9-a605-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "House \u00b7 Hungary",
+    "playlist_url": "https://dancewave.online/dance.ogg"
+  },
+  {
+    "id": "96156a3e-0601-11e8-ae97-52543be04c81",
+    "name": "Deep House Lounge",
+    "key": "96156a3e-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "House \u00b7 The United States Of America",
+    "playlist_url": "http://198.15.94.34:8006/stream"
+  },
+  {
+    "id": "963c00ab-0601-11e8-ae97-52543be04c81",
+    "name": "Intense Radio - We love Dance 256k",
+    "key": "963c00ab-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "House \u00b7 The Netherlands",
+    "playlist_url": "http://intenseradio.live-streams.nl:8000/main"
+  },
+  {
+    "id": "962a748b-0601-11e8-ae97-52543be04c81",
+    "name": "1.FM - Deep House Radio",
+    "key": "962a748b-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "House \u00b7 Switzerland",
+    "playlist_url": "http://strm112.1.fm/deephouse_mobile_mp3"
+  },
+  {
+    "id": "78012206-1aa1-11e9-a80b-52543be04c81",
+    "name": "Radio Caprice - Dub Techno",
+    "key": "78012206-1aa1-11e9-a80b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Dub Techno \u00b7 Russia",
+    "playlist_url": "http://79.120.39.202:8000/dubtechno"
+  },
+  {
+    "id": "342a0e53-ab9b-11e9-88f4-52543be04c81",
+    "name": "TranceBase.FM - AAC HD 256k",
+    "key": "342a0e53-ab9b-11e9-88f4-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Techno \u00b7 Germany",
+    "playlist_url": "http://listen.trancebase.fm/tunein-aac-hd-pls"
+  },
+  {
+    "id": "sunshine-live-techno",
+    "name": "Sunshine Live - Techno",
+    "key": "sunshine-live-techno",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Techno \u00b7 Germany",
+    "playlist_url": "http://stream.sunshine-live.de/techno/mp3-192/stream.sunshine-live.de/"
+  },
+  {
+    "id": "960cc332-0601-11e8-ae97-52543be04c81",
+    "name": "Bassdrive",
+    "key": "960cc332-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Drum And Bass \u00b7 The United States Of America",
+    "playlist_url": "http://ice.bassdrive.net/stream"
+  },
+  {
+    "id": "9619271d-0601-11e8-ae97-52543be04c81",
+    "name": "Kane FM",
+    "key": "9619271d-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Drum And Bass \u00b7 The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "http://stream.kanefm.com:1037/;stream"
+  },
+  {
+    "id": "dnbradio-main",
+    "name": "DNBRadio Main",
+    "key": "dnbradio-main",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Drum And Bass \u00b7 United Kingdom",
+    "playlist_url": "http://ildnb1.dnbradio.com:8000/dnbradio_main.mp3"
+  },
+  {
+    "id": "655def6d-734f-4ef7-972a-6abc56763162",
+    "name": "Bluegrass Country",
+    "key": "655def6d-734f-4ef7-972a-6abc56763162",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Bluegrass \u00b7 The United States Of America",
+    "playlist_url": "https://ice24.securenetsystems.net/WAMU"
+  },
+  {
+    "id": "9633a7d4-0601-11e8-ae97-52543be04c81",
+    "name": "181.FM - Front Porch (Bluegrass)",
+    "key": "9633a7d4-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Bluegrass \u00b7 The United States Of America",
+    "playlist_url": "http://listen.181fm.com/181-frontporch_128k.mp3"
+  },
+  {
+    "id": "d30c38d2-0817-4016-932a-1c60d9f99925",
+    "name": "Radio Free Americana",
+    "key": "d30c38d2-0817-4016-932a-1c60d9f99925",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Americana \u00b7 The United States Of America",
+    "playlist_url": "http://janus.cdnstream.com:5140/live"
+  },
+  {
+    "id": "6448b0db-b9ce-48ae-8a0f-4d128d0a8037",
+    "name": "WRIX Electric City Bluegrass",
+    "key": "6448b0db-b9ce-48ae-8a0f-4d128d0a8037",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Bluegrass \u00b7 The United States Of America",
+    "playlist_url": "http://ice64.securenetsystems.net/WRIX"
+  },
+  {
+    "id": "961d9b63-0601-11e8-ae97-52543be04c81",
+    "name": ".977 Country",
+    "key": "961d9b63-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Country \u00b7 The United States Of America",
+    "playlist_url": "http://26343.live.streamtheworld.com/977_COUNTRY_SC"
+  },
+  {
+    "id": "9606ceae-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Caroline",
+    "key": "9606ceae-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Country \u00b7 The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "http://78.129.202.200:8040/;"
+  },
+  {
+    "id": "960d4889-0601-11e8-ae97-52543be04c81",
+    "name": "181.FM - Highway 181",
+    "key": "960d4889-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Country \u00b7 The United States Of America",
+    "playlist_url": "http://listen.181fm.com/181-highway_128k.mp3"
+  },
+  {
+    "id": "962a63f2-0601-11e8-ae97-52543be04c81",
+    "name": "1.FM - Absolute Country Hits Radio",
+    "key": "962a63f2-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Country \u00b7 Switzerland",
+    "playlist_url": "http://strm112.1.fm/acountry_mobile_mp3"
+  },
+  {
+    "id": "nectarine-demoscene-radio",
+    "name": "Nectarine Demoscene Radio",
+    "key": "nectarine-demoscene-radio",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Demoscene \u00b7 Germany",
+    "playlist_url": "http://nectarine.from-de.com/necta192"
+  },
+  {
+    "id": "scenesat-radio-mp3",
+    "name": "SceneSat Radio",
+    "key": "scenesat-radio-mp3",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Demoscene \u00b7 Sweden",
+    "playlist_url": "http://oscar.scenesat.com:8000/scenesatmax"
+  },
+  {
+    "id": "cgm-uk-demoscene",
+    "name": "CGM UK DemoScene",
+    "key": "cgm-uk-demoscene",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Demoscene \u00b7 United Kingdom",
+    "playlist_url": "http://www.lmp.d2g.com:8040/;"
+  },
+  {
+    "id": "modfm",
+    "name": "ModFM",
+    "key": "modfm",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Demoscene/Tracker \u00b7 Poland",
+    "playlist_url": "http://radio.modules.pl:8500/;"
+  },
+  {
+    "id": "kaaos-radio-chiptune",
+    "name": "Kaaos Radio Chiptune",
+    "key": "kaaos-radio-chiptune",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Chiptune \u00b7 Finland",
+    "playlist_url": "http://stream.kaaosradio.fi:8000/chip"
+  },
+  {
+    "id": "98137c2d-ce68-4e33-8cb7-ddf3692ecc9d",
+    "name": "BBC Radio 4",
+    "key": "98137c2d-ce68-4e33-8cb7-ddf3692ecc9d",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk \u00b7 UK \u2014 Ideas, culture & policy: In Our Time, The Moral Maze, AI/technology debates",
+    "playlist_url": "http://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d128000.norewind.m3u8"
+  },
+  {
+    "id": "98adecf7-2683-4408-9be7-02d3f9098eb8",
+    "name": "BBC World Service",
+    "key": "98adecf7-2683-4408-9be7-02d3f9098eb8",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk \u00b7 UK \u2014 Global news, technology, science, and cultural affairs",
+    "playlist_url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+  },
+  {
+    "id": "7ba4c184-fc2b-11e9-bbf2-52543be04c81",
+    "name": "NPR 24 Hour Program Stream",
+    "key": "7ba4c184-fc2b-11e9-bbf2-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk \u00b7 USA \u2014 Public radio: science, technology, arts, and current affairs",
+    "playlist_url": "http://npr-ice.streamguys1.com/live.mp3"
+  },
+  {
+    "id": "a966a23b-1ced-11ea-a955-52543be04c81",
+    "name": "Jupiter Broadcasting Live",
+    "key": "a966a23b-1ced-11ea-a955-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Technology \u00b7 USA \u2014 Linux, open source, and tech news (Linux Action News, Self-Hosted, etc.)",
+    "playlist_url": "http://n09.radiojar.com/0uk94cu0xrquv"
+  },
+  {
+    "id": "313046e3-b203-4b9d-bc3e-393da7d97126",
+    "name": "WALM - Old Time Radio",
+    "key": "313046e3-b203-4b9d-bc3e-393da7d97126",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Comedy \u00b7 USA \u2014 Golden age radio: classic comedy, drama, mystery, and variety",
+    "playlist_url": "https://icecast.walmradio.com:8443/otr"
+  },
+  {
+    "id": "ccd9d009-b369-4451-9ebb-a2138bed734f",
+    "name": "BBC Radio 4 Extra",
+    "key": "ccd9d009-b369-4451-9ebb-a2138bed734f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Comedy \u00b7 UK \u2014 BBC archive comedy, classic drama, and panel shows",
+    "playlist_url": "http://as-hls-ww-live.akamaized.net/pool_26173715/live/ww/bbc_radio_four_extra/bbc_radio_four_extra.isml/bbc_radio_four_extra-audio%3d128000.norewind.m3u8"
+  },
+  {
+    "id": "960d2014-0601-11e8-ae97-52543be04c81",
+    "name": ".977 Comedy",
+    "key": "960d2014-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Comedy \u00b7 USA \u2014 Comedy music and entertainment",
+    "playlist_url": "http://26433.live.streamtheworld.com/977_COMEDY_SC"
+  }
+]
