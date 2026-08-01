@@ -1,0 +1,65 @@
+[
+  {
+    "id": "rp-main-mix",
+    "name": "Main Mix",
+    "key": "main-mix",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Eclectic mix, DJ-curated · California",
+    "playlist_url": "https://stream.radioparadise.com/mp3-192"
+  },
+  {
+    "id": "rp-mellow",
+    "name": "Mellow Mix",
+    "key": "mellow",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Mellow, downtempo · California",
+    "playlist_url": "https://stream.radioparadise.com/mellow-192"
+  },
+  {
+    "id": "rp-rock",
+    "name": "RockIt!",
+    "key": "rock",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Rock, alternative · California",
+    "playlist_url": "https://stream.radioparadise.com/rock-192"
+  },
+  {
+    "id": "rp-global",
+    "name": "The Globe",
+    "key": "global",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "World music · California",
+    "playlist_url": "https://stream.radioparadise.com/global-192"
+  },
+  {
+    "id": "rp-beyond",
+    "name": "Beyond...",
+    "key": "beyond",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Ambient, experimental · California",
+    "playlist_url": "https://stream.radioparadise.com/beyond-192"
+  },
+  {
+    "id": "rp-serenity",
+    "name": "Serenity",
+    "key": "serenity",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Classical, ambient · California",
+    "playlist_url": "https://stream.radioparadise.com/serenity"
+  },
+  {
+    "id": "rp-kfat",
+    "name": "KFAT",
+    "key": "kfat",
+    "item_type": "radio",
+    "network": "radioparadise",
+    "description": "Freeform retro country/rock · California",
+    "playlist_url": "https://stream.radioparadise.com/kfat-192"
+  }
+]

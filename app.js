@@ -11,7 +11,13 @@ const NETWORKS = [
   { slug: "somafm", display_name: "SOMAFM.COM" },
   { slug: "radiobrowser", display_name: "RADIO-BROWSER.INFO" },
   { slug: "yle", display_name: "YLE.FI" },
+  { slug: "nts", display_name: "NTS.LIVE" },
+  { slug: "radioparadise", display_name: "RADIOPARADISE.COM" },
 ];
+
+// Now-playing polling only works for networks with a live "what's on"
+// endpoint -- for everyone else it would just poll a no-op.
+const POLLABLE_NETWORKS = new Set(["somafm", "nts"]);
 
 const RB_HOSTS = [
   "all.api.radio-browser.info", // DNS round-robin across all servers
@@ -69,6 +75,43 @@ async function fetchSomaFMChannels() {
       description: c.description,
       playlist_url: c.playlists && c.playlists[0] ? c.playlists[0].url : null,
     }));
+  } catch (e) {
+    return [];
+  }
+}
+
+// nts.live's live-schedule API doesn't include a stream URL field -- these
+// are NTS's own well-known public relay endpoints for the two channels.
+const NTS_STREAMS = {
+  "1": "https://stream-relay-geo.ntslive.net/stream",
+  "2": "https://stream-relay-geo.ntslive.net/stream2",
+};
+
+async function fetchNTSData() {
+  const res = await fetch("https://www.nts.live/api/v2/live");
+  if (!res.ok) throw new Error(`NTS unreachable (${res.status})`);
+  return res.json();
+}
+
+function ntsNowPlayingTitle(channel) {
+  return channel?.now?.embeds?.details?.name || channel?.now?.broadcast_title || null;
+}
+
+async function fetchNTSChannels() {
+  try {
+    const data = await fetchNTSData();
+    return (data.results || []).map((r) => {
+      const genres = (r.now?.embeds?.details?.genres || []).map((g) => g.value).slice(0, 2).join(", ");
+      return {
+        id: `nts-${r.channel_name}`,
+        name: `NTS ${r.channel_name}`,
+        key: r.channel_name,
+        item_type: "radio",
+        network: "nts",
+        description: genres || "Live radio · London",
+        playlist_url: NTS_STREAMS[r.channel_name],
+      };
+    });
   } catch (e) {
     return [];
   }
@@ -156,12 +199,14 @@ function radioApp() {
 
     async init() {
       try {
-        const [somafm, radiobrowser, yle] = await Promise.all([
+        const [somafm, radiobrowser, yle, nts, radioparadise] = await Promise.all([
           fetchSomaFMChannels(),
           fetch("data/radiobrowser.json").then((r) => r.json()),
           fetch("data/yle.json").then((r) => r.json()),
+          fetchNTSChannels(),
+          fetch("data/radioparadise.json").then((r) => r.json()),
         ]);
-        const catalog = [...somafm, ...radiobrowser, ...yle];
+        const catalog = [...somafm, ...radiobrowser, ...yle, ...nts, ...radioparadise];
 
         const existingKeys = new Set(catalog.map((c) => c.key));
         for (const custom of loadCustomChannels()) {
@@ -346,7 +391,7 @@ function radioApp() {
 
     startTrackPolling(item) {
       this.stopTrackPolling();
-      if (item.network !== "somafm") return;
+      if (!POLLABLE_NETWORKS.has(item.network)) return;
       this.fetchNowPlayingTrack(item);
       this._trackPollTimer = setInterval(() => this.fetchNowPlayingTrack(item), 20000);
     },
@@ -359,9 +404,18 @@ function radioApp() {
 
     async fetchNowPlayingTrack(item) {
       try {
-        const data = await fetchSomaFMData();
-        const channel = (data.channels || []).find((c) => c.id === item.key);
-        this.nowPlayingTrack = channel && channel.lastPlaying ? { track: channel.lastPlaying } : null;
+        if (item.network === "somafm") {
+          const data = await fetchSomaFMData();
+          const channel = (data.channels || []).find((c) => c.id === item.key);
+          this.nowPlayingTrack = channel && channel.lastPlaying ? { track: channel.lastPlaying } : null;
+        } else if (item.network === "nts") {
+          const data = await fetchNTSData();
+          const channel = (data.results || []).find((r) => r.channel_name === item.key);
+          const title = ntsNowPlayingTitle(channel);
+          this.nowPlayingTrack = title ? { track: title } : null;
+        } else {
+          this.nowPlayingTrack = null;
+        }
       } catch (e) {
         this.nowPlayingTrack = null;
       }

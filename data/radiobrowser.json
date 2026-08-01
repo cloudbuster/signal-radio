@@ -1278,15 +1278,6 @@
     "playlist_url": "http://nashe1.hostingradio.ru/ultra-192.mp3"
   },
   {
-    "id": "5681d06a-f5af-11e9-bbf2-52543be04c81",
-    "name": "Radio Paradise Rock Mix 320k AAC",
-    "key": "5681d06a-f5af-11e9-bbf2-52543be04c81",
-    "item_type": "radio",
-    "network": "radiobrowser",
-    "description": "Alternative · The United States Of America",
-    "playlist_url": "http://stream.radioparadise.com/rock-320"
-  },
-  {
     "id": "9619e894-0601-11e8-ae97-52543be04c81",
     "name": "TMM 2",
     "key": "9619e894-0601-11e8-ae97-52543be04c81",
