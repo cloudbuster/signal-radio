@@ -172,6 +172,18 @@ dialog.dialog-modal {
   transition: opacity 150ms ease, overlay 150ms ease allow-discrete, display 150ms ease allow-discrete;
 }
 
+/* Tailwind's `flex` utility can't be applied directly on the <dialog> tag
+   itself: author styles always beat UA-stylesheet defaults regardless of
+   specificity, so an unconditional `display: flex` class permanently
+   overrides the browser's own `dialog:not([open]) { display: none }` --
+   leaving a full-viewport, invisible, click-eating dialog sitting over the
+   whole page even while "closed". Scoping it to [open] avoids that fight
+   entirely: this rule simply doesn't match while closed, so the UA default
+   is free to apply. */
+dialog.dialog-modal[open] {
+  display: flex;
+}
+
 dialog.dialog-modal[open] {
   opacity: 1;
 }
