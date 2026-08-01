@@ -164,6 +164,10 @@
    can still transition. */
 
 dialog.dialog-modal {
+  /* browsers' UA stylesheet sets color on <dialog> itself, breaking
+     inheritance from <body>'s text-paper for any descendant text that
+     doesn't set its own color (e.g. the modal titles) */
+  color: inherit;
   opacity: 0;
   transition: opacity 150ms ease, overlay 150ms ease allow-discrete, display 150ms ease allow-discrete;
 }
