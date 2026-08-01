@@ -7,35 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- cdn.tailwindcss.com sends no Access-Control-Allow-Origin header, so a
-     crossorigin+integrity (SRI) attribute pair blocks it from executing
-     rather than verifying it -- pinning the version is the furthest this
-     particular CDN's support goes. -->
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" integrity="sha384-hlhTcK8D1Pj0594UWVQ6V40KGnB4Y8+Pf6mov3DVLV2lr0PqHuq/x1lVg/hZn7jt" crossorigin="anonymous" />
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#14130F',
-          panel: '#1E1C16',
-          panel2: '#2A271E',
-          paper: '#EDE6D6',
-          paperdim: '#A89C82',
-          signal: '#8FBC6B',
-          amber: '#E8A33D',
-          staticred: '#C9554F',
-        },
-        fontFamily: {
-          display: ['"Big Shoulders"', 'sans-serif'],
-          body: ['"IBM Plex Sans"', 'sans-serif'],
-          mono: ['"IBM Plex Mono"', 'monospace'],
-        },
-      },
-    },
-  }
-</script>
+<link rel="stylesheet" href="tailwind.css">
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/+uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js" integrity="sha384-iZD2X8o1Zdq0HR5H/7oa8W30WS4No+zWCKUPD7fHRay9I1Gf+C4F8sVmw7zec1wW" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles.css">

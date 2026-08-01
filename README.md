@@ -1,7 +1,9 @@
 # Signal — Radio
 
-A small, static internet radio player. No backend, no build step, no
-account, no API keys. Just static files and a browser `<audio>` element.
+A small, static internet radio player. No backend, no account, no API keys.
+Just static files and a browser `<audio>` element — nothing to build or
+install to *deploy* it (see [Editing styles](#editing-styles) if you want to
+*change* it).
 
 Covers three free networks:
 
@@ -49,6 +51,22 @@ like:
   "playlist_url": "https://example.com/stream"
 }
 ```
+
+## Editing styles
+
+`tailwind.css` is a compiled, minified, purged stylesheet checked into the
+repo — deploying the site never touches Tailwind's own tooling. If you add
+or change utility classes in `index.html`/`app.js`, regenerate it:
+
+```sh
+npm install    # one-time, installs the Tailwind CLI locally
+npm run build:css
+```
+
+This project deliberately doesn't load Tailwind's own CDN build
+(`cdn.tailwindcss.com`) — that's a JIT compiler meant for prototyping
+(~400KB of JS, recompiled in-browser on every page load, and Tailwind's own
+docs say not to use it in production) rather than an actual stylesheet.
 
 ## Why there's no server
 
