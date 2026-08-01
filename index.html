@@ -44,8 +44,12 @@
       SIGNAL<span class="text-amber">.</span>
     </h1>
     <button
+      @click="toggleFavouritesFilter()"
+      :class="category === 'favourite' ? 'preset-btn preset-btn-active text-amber ml-auto' : 'preset-btn text-amber ml-auto'"
+    >★ FAVES</button>
+    <button
       @click="browseOpen = true"
-      class="preset-btn text-paperdim hover:text-paper ml-auto"
+      class="preset-btn text-paperdim hover:text-paper"
       title="Browse & add stations"
     >+ BROWSE</button>
     <button
@@ -65,31 +69,6 @@
       </label>
     </div>
   </header>
-
-  <!-- Preset rail -->
-  <nav class="preset-rail min-w-0 px-4 sm:px-6 py-3 border-b border-panel2 overflow-x-auto">
-    <div class="flex items-end gap-2 min-w-max">
-      <button
-        @click="selectCategory('all_networks')"
-        :class="category === 'all_networks' ? 'preset-btn preset-btn-active' : 'preset-btn'"
-      >ALL</button>
-
-      <template x-for="net in networks" :key="net.slug">
-        <button
-          @click="selectCategory(net.slug)"
-          :class="category === net.slug ? 'preset-btn preset-btn-active' : 'preset-btn'"
-          :title="net.display_name"
-          x-text="presetLabel(net)"
-        ></button>
-      </template>
-
-      <button
-        @click="selectCategory('favourite')"
-        :class="category === 'favourite' ? 'preset-btn preset-btn-active text-amber' : 'preset-btn text-amber'"
-      >★ FAVES</button>
-    </div>
-    <div class="tick-scale mt-1.5"></div>
-  </nav>
 
   <!-- Channel list -->
   <main class="flex-1 overflow-y-auto px-2 sm:px-4 pb-28">
@@ -207,9 +186,8 @@
         <section>
           <h3 class="text-amber uppercase tracking-widest text-xs mb-3">Navigating</h3>
           <ul class="space-y-1.5 text-paperdim">
-            <li><span class="text-paper">Preset rail</span> — filter by network (ALL, SF, RB, YLE)</li>
-            <li><span class="text-paper">★ FAVES</span> — your saved stations</li>
-            <li><span class="text-paper">Search bar</span> — filter channels by name in the current view</li>
+            <li><span class="text-paper">★ FAVES</span> — toggle to just your saved stations</li>
+            <li><span class="text-paper">Search bar</span> — filters by name, falls back to description, then typo-tolerant fuzzy match</li>
           </ul>
         </section>
 

@@ -6,12 +6,6 @@ const GENRE_SYNONYMS = {
   lofi: "lo-fi",
 };
 
-const PRESET_CODES = {
-  somafm: "SF",
-  radiobrowser: "RB",
-  yle: "YLE",
-};
-
 // Static: this fork has no backend, so there's nothing to fetch these from.
 const NETWORKS = [
   { slug: "somafm", display_name: "SOMAFM.COM" },
@@ -191,12 +185,8 @@ function radioApp() {
       );
     },
 
-    presetLabel(net) {
-      return PRESET_CODES[net.slug] || net.slug.slice(0, 3).toUpperCase();
-    },
-
-    selectCategory(categoryId) {
-      this.category = categoryId;
+    toggleFavouritesFilter() {
+      this.category = this.category === "favourite" ? "all_networks" : "favourite";
     },
 
     networkDisplay(slug) {
@@ -205,14 +195,7 @@ function radioApp() {
     },
 
     filteredChannels() {
-      let source;
-      if (this.category === "all_networks") {
-        source = this.channels;
-      } else if (this.category === "favourite") {
-        source = this.favouriteItems;
-      } else {
-        source = this.channels.filter((c) => c.network === this.category);
-      }
+      const source = this.category === "favourite" ? this.favouriteItems : this.channels;
 
       const q = this.query.trim().toLowerCase();
       if (!q) return source;
