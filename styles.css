@@ -155,3 +155,58 @@
   background: #E8A33D;
   cursor: pointer;
 }
+
+/* ---------- dialogs (help modal, browse drawer) ----------
+   Both use <dialog>.showModal() instead of a hand-rolled overlay --
+   real focus-trapping and native ESC-to-close for free. The fade/slide
+   open+close animation uses @starting-style + allow-discrete so the
+   dialog's native display toggle (which is instant, not display:none)
+   can still transition. */
+
+dialog.dialog-modal {
+  opacity: 0;
+  transition: opacity 150ms ease, overlay 150ms ease allow-discrete, display 150ms ease allow-discrete;
+}
+
+dialog.dialog-modal[open] {
+  opacity: 1;
+}
+
+@starting-style {
+  dialog.dialog-modal[open] {
+    opacity: 0;
+  }
+}
+
+dialog.dialog-modal::backdrop {
+  background-color: rgb(20 19 15 / 0);
+  backdrop-filter: blur(4px);
+  transition: background-color 150ms ease, overlay 150ms ease allow-discrete, display 150ms ease allow-discrete;
+}
+
+dialog.dialog-modal[open]::backdrop {
+  background-color: rgb(20 19 15 / 0.75);
+}
+
+@starting-style {
+  dialog.dialog-modal[open]::backdrop {
+    background-color: rgb(20 19 15 / 0);
+  }
+}
+
+.browse-panel {
+  transform: translateX(100%);
+  transition: transform 200ms ease;
+}
+
+dialog.dialog-modal[open] .browse-panel {
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog.dialog-modal,
+  dialog.dialog-modal::backdrop,
+  .browse-panel {
+    transition: none;
+  }
+}

@@ -142,8 +142,6 @@ function radioApp() {
     isPlaying: false,
     volume: 70,
     errorMessage: "",
-    helpOpen: false,
-    browseOpen: false,
     browseQuery: "",
     browseTag: "",
     browseResults: [],
