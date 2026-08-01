@@ -85,8 +85,8 @@
           <button
             @click.stop="toggleFavourite(item)"
             class="favourite-btn text-lg leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-panel2 transition-colors"
-            :class="isFavourite(item.network, item.key) ? 'text-amber' : 'text-paperdim/30 group-hover:text-paperdim'"
-            :aria-label="isFavourite(item.network, item.key) ? 'Remove favourite' : 'Add favourite'"
+            :class="isFavourite(item) ? 'text-amber' : 'text-paperdim/30 group-hover:text-paperdim'"
+            :aria-label="isFavourite(item) ? 'Remove favourite' : 'Add favourite'"
           >★</button>
         </li>
       </template>
@@ -115,7 +115,7 @@
     <button
       @click="nowPlaying && toggleFavourite(nowPlaying)"
       class="w-9 h-9 flex items-center justify-center rounded hover:bg-panel2 transition-colors text-lg"
-      :class="nowPlaying && isFavourite(nowPlaying.network, nowPlaying.key) ? 'text-amber' : 'text-paperdim'"
+      :class="nowPlaying && isFavourite(nowPlaying) ? 'text-amber' : 'text-paperdim'"
       :disabled="!nowPlaying"
     >★</button>
 

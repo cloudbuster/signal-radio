@@ -47,23 +47,14 @@ const saveFavourites = (favs) => saveToStorage(STORAGE_KEYS.favourites, favs);
 const loadCustomChannels = () => loadFromStorage(STORAGE_KEYS.custom);
 const saveCustomChannels = (items) => saveToStorage(STORAGE_KEYS.custom, items);
 
-// Shared across both the catalog fetch and the now-playing poll, which both
-// hit this same endpoint -- a short TTL collapses simultaneous/rapid-fire
-// calls (e.g. switching between several SomaFM stations in quick succession)
-// into one request instead of one each.
-let _somaFmCache = null; // { timestamp, data }
-const SOMAFM_CACHE_TTL_MS = 10000;
-
+// somafm.com/channels.json sends Cache-Control: max-age=20, so the browser's
+// own HTTP cache already collapses rapid repeat calls (catalog fetch + the
+// now-playing poll both hit this) within that window -- no app-level cache
+// needed on top of it.
 async function fetchSomaFMData() {
-  const now = Date.now();
-  if (_somaFmCache && now - _somaFmCache.timestamp < SOMAFM_CACHE_TTL_MS) {
-    return _somaFmCache.data;
-  }
   const res = await fetch("https://somafm.com/channels.json");
   if (!res.ok) throw new Error(`SomaFM unreachable (${res.status})`);
-  const data = await res.json();
-  _somaFmCache = { timestamp: now, data };
-  return data;
+  return res.json();
 }
 
 async function fetchSomaFMChannels() {
@@ -113,6 +104,10 @@ function parsePlaylistUrls(content, fmt) {
     .split(/\r?\n/)
     .map((l) => l.trim())
     .filter((l) => l && !l.startsWith("#"));
+}
+
+function sameItem(a, b) {
+  return a.key === b.key && a.network === b.network;
 }
 
 function titleCase(s) {
@@ -235,12 +230,12 @@ function radioApp() {
       return "No stations in this category.";
     },
 
-    isFavourite(network, key) {
-      return this.favouriteItems.some((f) => f.key === key && f.network === network);
+    isFavourite(item) {
+      return this.favouriteItems.some((f) => sameItem(f, item));
     },
 
     isNowPlaying(item) {
-      return !!this.nowPlaying && this.nowPlaying.key === item.key && this.nowPlaying.network === item.network;
+      return !!this.nowPlaying && sameItem(this.nowPlaying, item);
     },
 
     nowPlayingLabel() {
@@ -249,9 +244,9 @@ function radioApp() {
     },
 
     toggleFavourite(item) {
-      if (this.isFavourite(item.network, item.key)) {
-        saveFavourites(loadFavourites().filter((f) => !(f.key === item.key && f.network === item.network)));
-        this.favouriteItems = this.favouriteItems.filter((f) => !(f.key === item.key && f.network === item.network));
+      if (this.isFavourite(item)) {
+        saveFavourites(loadFavourites().filter((f) => !sameItem(f, item)));
+        this.favouriteItems = this.favouriteItems.filter((f) => !sameItem(f, item));
       } else {
         const favs = loadFavourites();
         favs.push({ key: item.key, network: item.network, name: item.name });
@@ -383,7 +378,7 @@ function radioApp() {
     },
 
     isInCatalog(item) {
-      return this.channels.some((c) => c.key === item.key && c.network === item.network);
+      return this.channels.some((c) => sameItem(c, item));
     },
 
     async searchBrowse() {
@@ -438,22 +433,22 @@ function radioApp() {
     addCustomChannel(item) {
       const saved = { ...item, source: "custom" };
       const custom = loadCustomChannels();
-      if (custom.some((c) => c.key === saved.key && c.network === saved.network)) return;
+      if (custom.some((c) => sameItem(c, saved))) return;
       custom.push(saved);
       saveCustomChannels(custom);
-      if (!this.channels.some((c) => c.key === saved.key && c.network === saved.network)) this.channels.push(saved);
+      if (!this.channels.some((c) => sameItem(c, saved))) this.channels.push(saved);
     },
 
     removeCustomChannel(item) {
       const custom = loadCustomChannels();
-      const remaining = custom.filter((c) => !(c.key === item.key && c.network === item.network));
+      const remaining = custom.filter((c) => !sameItem(c, item));
       if (remaining.length === custom.length) return;
       saveCustomChannels(remaining);
 
-      this.channels = this.channels.filter((c) => !(c.key === item.key && c.network === item.network && c.source === "custom"));
-      if (this.nowPlaying?.key === item.key && this.nowPlaying?.network === item.network) this.stop();
-      this.favouriteItems = this.favouriteItems.filter((f) => !(f.key === item.key && f.network === item.network));
-      saveFavourites(loadFavourites().filter((f) => !(f.key === item.key && f.network === item.network)));
+      this.channels = this.channels.filter((c) => !(sameItem(c, item) && c.source === "custom"));
+      if (this.nowPlaying && sameItem(this.nowPlaying, item)) this.stop();
+      this.favouriteItems = this.favouriteItems.filter((f) => !sameItem(f, item));
+      saveFavourites(loadFavourites().filter((f) => !sameItem(f, item)));
     },
 
     flashError(message) {
