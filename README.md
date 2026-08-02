@@ -52,6 +52,14 @@ like:
 }
 ```
 
+Prefer an `https://` `playlist_url` when one exists. The page itself is served
+over HTTPS, so an `http://` stream is mixed content: browsers either block it
+outright or silently fail to autoupgrade it, which is also what trips the
+"connection is not fully secure" warning some browsers show for this site.
+Before adding a plain-http station, check whether swapping the scheme to
+`https://` still connects (e.g. `curl -I https://host/path`) -- most Icecast
+mirrors serve both.
+
 ## Editing styles
 
 `tailwind.css` is a compiled, minified, purged stylesheet checked into the
