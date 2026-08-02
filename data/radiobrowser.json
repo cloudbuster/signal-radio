@@ -2194,5 +2194,1661 @@
     "network": "radiobrowser",
     "description": "Meditation · Spain",
     "playlist_url": "https://stream.zeno.fm/3ac97ysh6f0uv.aac"
+  },
+  {
+    "id": "cc0fdbe3-a2fb-4f0a-b67d-b47acd6354c7",
+    "name": "Technolovers DEEP HOUSE",
+    "key": "cc0fdbe3-a2fb-4f0a-b67d-b47acd6354c7",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/deep-house?ref=radiobrowser"
+  },
+  {
+    "id": "63dd5d75-855f-4e7e-9570-b8d3b338c016",
+    "name": "Perfect Deep House",
+    "key": "63dd5d75-855f-4e7e-9570-b8d3b338c016",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Spain",
+    "playlist_url": "https://stream.radiojar.com/asngk2sg798uv?1659885393"
+  },
+  {
+    "id": "676dafe0-13d8-4caf-aced-bfd5fbf78a1c",
+    "name": "101.ru - Deep House",
+    "key": "676dafe0-13d8-4caf-aced-bfd5fbf78a1c",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://pub0202.101.ru:8000/stream/trust/mp3/128/173"
+  },
+  {
+    "id": "9b825eb6-0fa3-44b8-842d-93f9d8d3986f",
+    "name": "Anti Radio",
+    "key": "9b825eb6-0fa3-44b8-842d-93f9d8d3986f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Azerbaijan",
+    "playlist_url": "https://stream.antiradio.net/radio/8000/mp3"
+  },
+  {
+    "id": "ba59c7f8-d4fa-45ca-8a5f-50d5e9b69daf",
+    "name": "Vanilla Radio Deep Flavors [HD 320]",
+    "key": "ba59c7f8-d4fa-45ca-8a5f-50d5e9b69daf",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Greece",
+    "playlist_url": "https://stream.vanillaradio.com:8090/live"
+  },
+  {
+    "id": "960eb232-0601-11e8-ae97-52543be04c81",
+    "name": "SomaFM Beat Blender (128k MP3)",
+    "key": "960eb232-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://ice6.somafm.com/beatblender-128-mp3"
+  },
+  {
+    "id": "bc0fc480-9229-4d6a-85b8-b91f38191f43",
+    "name": "Epic Lounge - IBIZA CHILLOUT LOUNGE",
+    "key": "bc0fc480-9229-4d6a-85b8-b91f38191f43",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.epic-lounge.com/ibiza-chillout-lounge?ref=radiobrowser"
+  },
+  {
+    "id": "01fa3ef0-acf6-4e63-8777-f5bb4957b5ec",
+    "name": "Technolovers - MINIMAL",
+    "key": "01fa3ef0-acf6-4e63-8777-f5bb4957b5ec",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/minimal?ref=radiobrowser"
+  },
+  {
+    "id": "191bc3a9-845b-4e9f-aca9-e3c7344b6a87",
+    "name": "Deep One",
+    "key": "191bc3a9-845b-4e9f-aca9-e3c7344b6a87",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://stream.deep1.ru/deep1mp3"
+  },
+  {
+    "id": "736c9d38-8947-4d73-b5d8-347c592654fc",
+    "name": "Extreme Deep House Radio",
+    "key": "736c9d38-8947-4d73-b5d8-347c592654fc",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Bulgaria",
+    "playlist_url": "https://whsh4u-panel.com/proxy/yfryujzw/stream"
+  },
+  {
+    "id": "3c7e77d9-3e4f-4305-8db2-901e40cfcf0c",
+    "name": "URALSOUND FM | DEEP HOUSE",
+    "key": "3c7e77d9-3e4f-4305-8db2-901e40cfcf0c",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://5.restream.one/1392_1"
+  },
+  {
+    "id": "22423370-efbf-4bf2-a301-5bd918cd8ad5",
+    "name": "Technolovers - BASS HOUSE",
+    "key": "22423370-efbf-4bf2-a301-5bd918cd8ad5",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/bass-house?ref=radiobrowser"
+  },
+  {
+    "id": "6d83b863-e60e-4f50-9916-597f23ebf1ce",
+    "name": "__HOUSE__ by rautemusik (rm.fm)",
+    "key": "6d83b863-e60e-4f50-9916-597f23ebf1ce",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://house-high.rautemusik.fm/?ref=radiobrowser"
+  },
+  {
+    "id": "41d830a3-c80c-4745-954d-f6b2fc3f6622",
+    "name": "Technolovers - IBIZA HOUSE",
+    "key": "41d830a3-c80c-4745-954d-f6b2fc3f6622",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/ibiza-house?ref=radiobrowser"
+  },
+  {
+    "id": "92aef6af-edb6-4fae-b212-c990deb76efc",
+    "name": "Lounge Radio Ibiza",
+    "key": "92aef6af-edb6-4fae-b212-c990deb76efc",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.laut.fm/lounge-radio-ibiza"
+  },
+  {
+    "id": "4d98ac08-5f85-45ae-85b3-1ece9bad3fec",
+    "name": "Ibiza Stardust Radio",
+    "key": "4d98ac08-5f85-45ae-85b3-1ece9bad3fec",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Spain",
+    "playlist_url": "https://www.radioking.com/play/ibiza-stardust-radio-1"
+  },
+  {
+    "id": "c58c0009-ad0d-4ed5-a208-a8e797885a75",
+    "name": "House Music Radio",
+    "key": "c58c0009-ad0d-4ed5-a208-a8e797885a75",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://uk4-vn.mixstream.net/8128/listen.mp3"
+  },
+  {
+    "id": "52adc4eb-92c9-4214-ba8c-dff98d386b83",
+    "name": "Epic Lounge - SOFT HOUSE LOUNGE",
+    "key": "52adc4eb-92c9-4214-ba8c-dff98d386b83",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.epic-lounge.com/soft-house-lounge?ref=radiobrowser"
+  },
+  {
+    "id": "752939c0-c0e4-483c-a4bb-eb62a4870935",
+    "name": "Technolovers TROPICAL HOUSE",
+    "key": "752939c0-c0e4-483c-a4bb-eb62a4870935",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/tropical-house?ref=radiobrowser"
+  },
+  {
+    "id": "9e286b3c-5185-11e9-a4d7-52543be04c81",
+    "name": "Sub FM",
+    "key": "9e286b3c-5185-11e9-a4d7-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house",
+    "playlist_url": "https://subfm.radioca.st/"
+  },
+  {
+    "id": "90091050-1b6d-4148-a865-9dfa61abae9e",
+    "name": "DFM - Gangsta Deep",
+    "key": "90091050-1b6d-4148-a865-9dfa61abae9e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://dfm-gangstadeep.hostingradio.ru/gangstadeep96.aacp"
+  },
+  {
+    "id": "53859235-938e-44e0-929a-ff59ae09b29e",
+    "name": "M.Deep Radio",
+    "key": "53859235-938e-44e0-929a-ff59ae09b29e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://deephousex.ru/live"
+  },
+  {
+    "id": "d366167f-96ef-4c99-9214-b9a3ab4276f5",
+    "name": "Chill Radio",
+    "key": "d366167f-96ef-4c99-9214-b9a3ab4276f5",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Albania",
+    "playlist_url": "https://eu8.fastcast4u.com/proxy/chillradio?mp=/1"
+  },
+  {
+    "id": "290f4561-51d6-4a98-a4ea-73eb230f8e1d",
+    "name": "Nam Radio Local",
+    "key": "290f4561-51d6-4a98-a4ea-73eb230f8e1d",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Namibia",
+    "playlist_url": "https://music-station.live/radio/8010/radio.mp3"
+  },
+  {
+    "id": "b52522ba-f0b3-475f-88a2-0c9016fe1d05",
+    "name": "bigFM House Beats",
+    "key": "b52522ba-f0b3-475f-88a2-0c9016fe1d05",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.bigfm.de/deeptechhouse/mp3-128/radio-browser"
+  },
+  {
+    "id": "6c5dc2fe-f924-4341-bd43-84aabc359073",
+    "name": "House of Funk",
+    "key": "6c5dc2fe-f924-4341-bd43-84aabc359073",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Poland",
+    "playlist_url": "https://houseoffunk.eu:8443/live"
+  },
+  {
+    "id": "d994df65-5c71-48ec-b675-96b8d14bd4e9",
+    "name": "SWEET RADIO - BULGARIA",
+    "key": "d994df65-5c71-48ec-b675-96b8d14bd4e9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Bulgaria",
+    "playlist_url": "https://stream.sweetradio.online:8001/HD"
+  },
+  {
+    "id": "48faa3f4-76cf-40d9-8dd6-34728a15ad20",
+    "name": "Fly 104",
+    "key": "48faa3f4-76cf-40d9-8dd6-34728a15ad20",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Greece",
+    "playlist_url": "https://imagine2.radioca.st/;stream.nsv"
+  },
+  {
+    "id": "05324cb6-8a7c-47a2-accb-5423f3d1e686",
+    "name": "Nu Disco Funk Radio",
+    "key": "05324cb6-8a7c-47a2-accb-5423f3d1e686",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://my.radiolize.com/radio/8090/radio.mp3"
+  },
+  {
+    "id": "c8900e24-77c4-11ea-b1cf-52543be04c81",
+    "name": "I love the beach",
+    "key": "c8900e24-77c4-11ea-b1cf-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://ilm.stream35.radiohost.de/ilm_ilovethebeach_mp3-192?upd-meta&upd-scheme=https&_art=dD0xNzY4NDUwODI4JmQ9YWVjYzRkNzE5MzNhN2E2Nzk0NWI"
+  },
+  {
+    "id": "3667d110-ba77-4430-83f7-28d014e2a6cb",
+    "name": "BeachGrooves Radio",
+    "key": "3667d110-ba77-4430-83f7-28d014e2a6cb",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Spain",
+    "playlist_url": "https://stream.beachgrooves.com:9000/stream.mp3"
+  },
+  {
+    "id": "d565778b-f29a-42c7-8a2d-5b45019cb3e2",
+    "name": "POP LOUNGE CAFE",
+    "key": "d565778b-f29a-42c7-8a2d-5b45019cb3e2",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.laut.fm/poploungecafe"
+  },
+  {
+    "id": "9096fbcd-8606-4dae-9300-a989ebae3898",
+    "name": "Deep Web Radio",
+    "key": "9096fbcd-8606-4dae-9300-a989ebae3898",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Greece",
+    "playlist_url": "https://i3.streams.ovh/ic/deepradio1/stream?"
+  },
+  {
+    "id": "31ca1048-8f31-41c8-9f4b-570a6e556cba",
+    "name": "Electrolounge Milano",
+    "key": "31ca1048-8f31-41c8-9f4b-570a6e556cba",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Italy",
+    "playlist_url": "https://electrolounge.stream.laut.fm/electrolounge?pl=m3u&t302=2026-01-15_02-06-49&uuid=90028019-e71d-4978-9be5-a4da5703b257"
+  },
+  {
+    "id": "8754a436-59e9-4393-a51f-7ee0ffb1db42",
+    "name": "ГУСЬ.Дипхаус",
+    "key": "8754a436-59e9-4393-a51f-7ee0ffb1db42",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://stream2.radiogoose.ru/listen/deep/play"
+  },
+  {
+    "id": "43ed2356-eba8-4943-b777-ed60691331c0",
+    "name": "Technolovers - LOUNGE",
+    "key": "43ed2356-eba8-4943-b777-ed60691331c0",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.technolovers.fm/lounge?ref=radiobrowser"
+  },
+  {
+    "id": "86468748-3045-4b88-97ef-e6d266c901f5",
+    "name": "Radio Samui Online",
+    "key": "86468748-3045-4b88-97ef-e6d266c901f5",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Thailand",
+    "playlist_url": "https://stream.mixadance.fm/radiosamui"
+  },
+  {
+    "id": "2e10cfad-23c8-4ecb-b89c-ed41ea5e56aa",
+    "name": "Extravaganza Radio",
+    "key": "2e10cfad-23c8-4ecb-b89c-ed41ea5e56aa",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Romania",
+    "playlist_url": "https://s3.radio.co/s1492c0564/listen"
+  },
+  {
+    "id": "4b08e02a-47a0-41ea-8a81-cebe14e05927",
+    "name": "Camara",
+    "key": "4b08e02a-47a0-41ea-8a81-cebe14e05927",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Greece",
+    "playlist_url": "https://n06.radiojar.com/252ry9dgytzuv?rj-ttl=5&rj-tok=AAABeKi3emcATmr2vFF6A41gwQ"
+  },
+  {
+    "id": "a3d45eec-8fb2-4e8a-8925-057d04576925",
+    "name": "Ibiza X Radio",
+    "key": "a3d45eec-8fb2-4e8a-8925-057d04576925",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Spain",
+    "playlist_url": "https://stream.radiojar.com/p1f2vpv37reuv"
+  },
+  {
+    "id": "a4fd68f8-d932-11e9-a861-52543be04c81",
+    "name": "TAKE A DJ - RADIO",
+    "key": "a4fd68f8-d932-11e9-a861-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://takeadj-radio.stream.laut.fm/takeadj-radio"
+  },
+  {
+    "id": "4688eb3a-a407-4360-aef6-ac823bbae240",
+    "name": "WSSR Sector Seven Radio",
+    "key": "4688eb3a-a407-4360-aef6-ac823bbae240",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://broadcast.wssr.stream/radio/8000/radio.mp3"
+  },
+  {
+    "id": "fdfcd532-ec4f-4193-aa24-78a1f0ae3de9",
+    "name": "Supravibe Radio",
+    "key": "fdfcd532-ec4f-4193-aa24-78a1f0ae3de9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Romania",
+    "playlist_url": "https://supraviberadio-radiohosting.radioca.st/stream"
+  },
+  {
+    "id": "270a3bee-247e-4398-b31f-9ce35f71d247",
+    "name": "Sub FM",
+    "key": "270a3bee-247e-4398-b31f-9ce35f71d247",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · New Zealand",
+    "playlist_url": "https://fmsub.radioca.st/stream?type=http&nocache=140"
+  },
+  {
+    "id": "3539dc4a-670a-4c74-91e3-eb4d54a42ea6",
+    "name": "Maxx FM Bulgaria | HQ",
+    "key": "3539dc4a-670a-4c74-91e3-eb4d54a42ea6",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Bulgaria",
+    "playlist_url": "https://play.radiomaxxfm.com/maxx-high"
+  },
+  {
+    "id": "2f934c0c-d2f6-40b6-9130-5b6980ec68ff",
+    "name": "Chillhouse Live",
+    "key": "2f934c0c-d2f6-40b6-9130-5b6980ec68ff",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.chillhouse-live.com/live"
+  },
+  {
+    "id": "e3c5ff64-1b5f-44d9-bb31-d85944d012bd",
+    "name": "Balearic FM",
+    "key": "e3c5ff64-1b5f-44d9-bb31-d85944d012bd",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://radio.balearic-fm.com:8000/radio.mp3"
+  },
+  {
+    "id": "772aa985-0c95-4962-9870-cdf84ea14368",
+    "name": "Deep Motion FM",
+    "key": "772aa985-0c95-4962-9870-cdf84ea14368",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://vm.motionfm.com/motionone_free"
+  },
+  {
+    "id": "1a421361-eb9f-40e9-9ab1-1a4ca39b90dd",
+    "name": "House FM",
+    "key": "1a421361-eb9f-40e9-9ab1-1a4ca39b90dd",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://uksoutha.streaming.broadcast.radio:19920/housefm"
+  },
+  {
+    "id": "5e063320-07d6-4d99-a434-f34e7e2a7431",
+    "name": "Pescobar Radio",
+    "key": "5e063320-07d6-4d99-a434-f34e7e2a7431",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Romania",
+    "playlist_url": "https://listen.radioking.com/radio/701141/stream/766385"
+  },
+  {
+    "id": "2873ff1d-d251-4c4d-9437-8ea3abfeea0f",
+    "name": "Abusia Radio",
+    "key": "2873ff1d-d251-4c4d-9437-8ea3abfeea0f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://ice66.securenetsystems.net/ABUSIA"
+  },
+  {
+    "id": "f7ae4419-8ab8-4430-a2a0-f55a47d5e847",
+    "name": "House Fusion Radio (UK) 192k mp3",
+    "key": "f7ae4419-8ab8-4430-a2a0-f55a47d5e847",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://housefusionradiouk.out.airtime.pro/housefusionradiouk_a"
+  },
+  {
+    "id": "afa6642d-c5f3-421c-9072-dc993d479840",
+    "name": "Data Transmission Radio",
+    "key": "afa6642d-c5f3-421c-9072-dc993d479840",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://data-transmission-radio.radiocult.fm/stream"
+  },
+  {
+    "id": "e24d6fd1-3c8f-4e18-b898-cd3fd29dde55",
+    "name": "Zoner Underground Network",
+    "key": "e24d6fd1-3c8f-4e18-b898-cd3fd29dde55",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Czechia",
+    "playlist_url": "https://stream.zunradio.cz/zun3.mp3"
+  },
+  {
+    "id": "301bcba8-fcdf-404a-9af0-d6465c178fc2",
+    "name": "SUEDSTADT TECHNO",
+    "key": "301bcba8-fcdf-404a-9af0-d6465c178fc2",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://stream.laut.fm/suedstadt-techno"
+  },
+  {
+    "id": "28b16157-a0a0-4f6b-b9eb-f0143212783b",
+    "name": "Rise FM Deep",
+    "key": "28b16157-a0a0-4f6b-b9eb-f0143212783b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Hungary",
+    "playlist_url": "https://oxygenmusic.hu:8443/RISE_DEEPHOUSE_128"
+  },
+  {
+    "id": "6dae7585-bf43-4c4f-a3dd-6a6b44354c64",
+    "name": "Deep House Radio",
+    "key": "6dae7585-bf43-4c4f-a3dd-6a6b44354c64",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Bulgaria",
+    "playlist_url": "https://home.radionrg.com/hls/deephouse/live.m3u8"
+  },
+  {
+    "id": "84a8a8a0-5c5e-44d0-9ff1-b63e2ba93fdc",
+    "name": "Radio Viva - Deep House & Dance",
+    "key": "84a8a8a0-5c5e-44d0-9ff1-b63e2ba93fdc",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://cast4.asurahosting.com/proxy/geo/stream"
+  },
+  {
+    "id": "03cb40a0-5aec-45ea-8baf-dcc6a927791e",
+    "name": "Side Street Radio",
+    "key": "03cb40a0-5aec-45ea-8baf-dcc6a927791e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://www.ophanim.net:8444/s/9780"
+  },
+  {
+    "id": "dd032a09-a9f0-4154-a4ad-ebe84eec1287",
+    "name": "Hotmix Deep House",
+    "key": "dd032a09-a9f0-4154-a4ad-ebe84eec1287",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · France",
+    "playlist_url": "https://streaming.hotmixradio.com/hotmix-deep-en-mp3?provider=radiobrowser"
+  },
+  {
+    "id": "534cdd4e-b6c5-4ccc-8580-dab81153371d",
+    "name": "Nui Radio",
+    "key": "534cdd4e-b6c5-4ccc-8580-dab81153371d",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://a2.radioheart.ru:9003/nuiradio"
+  },
+  {
+    "id": "5055e328-f63a-4b8d-b27f-3744022a8c74",
+    "name": "Box Radio 104.9",
+    "key": "5055e328-f63a-4b8d-b27f-3744022a8c74",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Greece",
+    "playlist_url": "https://feelgood.radioca.st/stream"
+  },
+  {
+    "id": "95a4c6e5-0948-482f-8e7a-df46f583e18b",
+    "name": "Deep Link Radio - Old House Music",
+    "key": "95a4c6e5-0948-482f-8e7a-df46f583e18b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://deeperlink.com:8032/stream"
+  },
+  {
+    "id": "9214ebab-e324-4ded-ae68-f0843f358f1f",
+    "name": "WalсonFM",
+    "key": "9214ebab-e324-4ded-ae68-f0843f358f1f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The Russian Federation",
+    "playlist_url": "https://myradio24.org/walcon"
+  },
+  {
+    "id": "4a67d934-8486-4f89-8c69-9099902de012",
+    "name": "OXO Radio",
+    "key": "4a67d934-8486-4f89-8c69-9099902de012",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Romania",
+    "playlist_url": "https://s4.ssl-stream.com/listen/oxo_radio/radio.mp3"
+  },
+  {
+    "id": "ac9b04b8-0e23-4fd7-ab49-69cb58caea49",
+    "name": "Ibiza Live Radio",
+    "key": "ac9b04b8-0e23-4fd7-ab49-69cb58caea49",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Spain",
+    "playlist_url": "https://uksoutha.streaming.broadcast.radio/ibiza-live-radio"
+  },
+  {
+    "id": "8a7bf632-3a0c-44fa-a496-883ee29119bf",
+    "name": "MAX.DANCE",
+    "key": "8a7bf632-3a0c-44fa-a496-883ee29119bf",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Germany",
+    "playlist_url": "https://maxdance.stream.laut.fm/maxdance"
+  },
+  {
+    "id": "0753f1cf-8812-4133-a586-cec763884ba7",
+    "name": "SSRadio",
+    "key": "0753f1cf-8812-4133-a586-cec763884ba7",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://ssradiol.radioca.st/listen.mp3"
+  },
+  {
+    "id": "6bb794f1-cdae-401b-9094-8fd1c91e9137",
+    "name": "Yellow Riviera",
+    "key": "6bb794f1-cdae-401b-9094-8fd1c91e9137",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · Monaco",
+    "playlist_url": "https://yellowradio.ice.infomaniak.ch/yellow01.mp3"
+  },
+  {
+    "id": "6c115d8d-70d7-42f4-b796-44e913ecdc18",
+    "name": "Deep Link Radio - Jazzier Link Radio",
+    "key": "6c115d8d-70d7-42f4-b796-44e913ecdc18",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Deep house · The United States Of America",
+    "playlist_url": "https://deeperlink.com:8012/stream"
+  },
+  {
+    "id": "6b36f91e-0a61-459c-bd84-853df27c49ed",
+    "name": "__BASS__ by rautemusik (rm.fm)",
+    "key": "6b36f91e-0a61-459c-bd84-853df27c49ed",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · Germany",
+    "playlist_url": "https://bass-high.rautemusik.fm/?ref=radiobrowser"
+  },
+  {
+    "id": "d56f4802-58fe-4940-8ef8-218ba600f858",
+    "name": "DNB FM",
+    "key": "d56f4802-58fe-4940-8ef8-218ba600f858",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The Russian Federation",
+    "playlist_url": "https://air.dnbfm.ru/listen/player/play"
+  },
+  {
+    "id": "c02a069b-7945-45e1-878c-148344960c1a",
+    "name": "Radio Record Liquid Funk",
+    "key": "c02a069b-7945-45e1-878c-148344960c1a",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The Russian Federation",
+    "playlist_url": "https://radiorecord.hostingradio.ru/liquidfunk96.aacp"
+  },
+  {
+    "id": "973c30a5-a178-4daf-89c7-272ec6c47456",
+    "name": "Kool FM",
+    "key": "973c30a5-a178-4daf-89c7-272ec6c47456",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://admin.stream.rinse.fm/proxy/kool/stream"
+  },
+  {
+    "id": "b8148b29-09d0-4aa1-8bfe-43d236260170",
+    "name": "Liquid DnB",
+    "key": "b8148b29-09d0-4aa1-8bfe-43d236260170",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://antares.dribbcast.com/proxy/dave1/stream/"
+  },
+  {
+    "id": "f6bc1537-107b-46a1-9c81-f25839474911",
+    "name": "Sunrise Radio (Czechia)",
+    "key": "f6bc1537-107b-46a1-9c81-f25839474911",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · Czechia",
+    "playlist_url": "https://stream.laut.fm/radio-dance-eu"
+  },
+  {
+    "id": "9467b580-dd8b-44d6-b99a-6ac688a50786",
+    "name": "ISEKOI Radio | Chill Zone",
+    "key": "9467b580-dd8b-44d6-b99a-6ac688a50786",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · France",
+    "playlist_url": "https://public.isekoi-radio.com/listen/chill/radio.mp3"
+  },
+  {
+    "id": "663eaa00-8c75-488d-b64f-612533ab41bf",
+    "name": "Jungle Planet Radio",
+    "key": "663eaa00-8c75-488d-b64f-612533ab41bf",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · Italy",
+    "playlist_url": "https://phoebe.streamerr.co:3650/;?type=http&nocache=1740335216"
+  },
+  {
+    "id": "16c600b5-0e48-4ace-b9bb-5bfc39a757d6",
+    "name": "XenFM",
+    "key": "16c600b5-0e48-4ace-b9bb-5bfc39a757d6",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://radio.xenfm.com/listen/xenfm/radio.mp3"
+  },
+  {
+    "id": "a6240fc3-cdfb-4eca-8781-9380666f816c",
+    "name": "(( RES ))",
+    "key": "a6240fc3-cdfb-4eca-8781-9380666f816c",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · The Russian Federation",
+    "playlist_url": "https://res.lirz.ru/listen/res/radio.mp3"
+  },
+  {
+    "id": "45bb5fc8-84df-4561-b282-935bb5dd7c86",
+    "name": "dinamo.fm fluent",
+    "key": "45bb5fc8-84df-4561-b282-935bb5dd7c86",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · Türkiye",
+    "playlist_url": "https://channels.dinamo.fm/fluent-mp3"
+  },
+  {
+    "id": "41ca6b24-f61f-11e8-a471-52543be04c81",
+    "name": "Bassdrive",
+    "key": "41ca6b24-f61f-11e8-a471-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB",
+    "playlist_url": "https://ice.bassdrive.net/stream32"
+  },
+  {
+    "id": "dfeae7e0-005a-4a3d-89a3-2419b75efa0d",
+    "name": "Liqui Radio",
+    "key": "dfeae7e0-005a-4a3d-89a3-2419b75efa0d",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Liquid DnB · Ukraine",
+    "playlist_url": "https://stream.zeno.fm/ug59eq099yzuv"
+  },
+  {
+    "id": "04cf4250-cc1b-4a50-98e9-886058ab3096",
+    "name": "Wired FM - FM 99.9 - Limerick, Ireland",
+    "key": "04cf4250-cc1b-4a50-98e9-886058ab3096",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Tech talk · Ireland",
+    "playlist_url": "https://s2.radio.co/sf0986595a/listen"
+  },
+  {
+    "id": "07824f96-0c33-11e9-a80b-52543be04c81",
+    "name": "TechLiveRadio",
+    "key": "07824f96-0c33-11e9-a80b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Tech talk · Germany",
+    "playlist_url": "https://stream.laut.fm/techliveradio"
+  },
+  {
+    "id": "d2a92f65-21be-4d37-a696-a1548aa9fac8",
+    "name": "The Engineered Network",
+    "key": "d2a92f65-21be-4d37-a696-a1548aa9fac8",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Tech talk · Australia",
+    "playlist_url": "https://stream.engineered.network:8002/stream"
+  },
+  {
+    "id": "107fb875-da5e-4732-945b-7c03bc7e8d3e",
+    "name": "Startup.Radio",
+    "key": "107fb875-da5e-4732-945b-7c03bc7e8d3e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Tech talk · Germany",
+    "playlist_url": "https://s2.radio.co/sb16d65602/listen"
+  },
+  {
+    "id": "e7205cd4-dc30-11e9-a8ba-52543be04c81",
+    "name": "Heart 70s",
+    "key": "e7205cd4-dc30-11e9-a8ba-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://media-ssl.musicradio.com/Heart70sMP3"
+  },
+  {
+    "id": "52bb00fe-dc31-11e9-a8ba-52543be04c81",
+    "name": "Heart 90s",
+    "key": "52bb00fe-dc31-11e9-a8ba-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://media-ssl.musicradio.com/Heart90sMP3"
+  },
+  {
+    "id": "1c3e8be2-5b14-4933-bad3-87cbc227cba4",
+    "name": "Deutschlandfunk | DLF | MP3 128k",
+    "key": "1c3e8be2-5b14-4933-bad3-87cbc227cba4",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Germany",
+    "playlist_url": "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3?aggregator=web"
+  },
+  {
+    "id": "960985b2-0601-11e8-ae97-52543be04c81",
+    "name": "WNYC-FM 93.9 New York Public Radio",
+    "key": "960985b2-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · The United States Of America",
+    "playlist_url": "https://fm939.wnyc.org/wnycfm"
+  },
+  {
+    "id": "147a830e-fbc3-4260-9504-6dcc62530923",
+    "name": "CBC Radio 1 Toronto",
+    "key": "147a830e-fbc3-4260-9504-6dcc62530923",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Canada",
+    "playlist_url": "https://cbcradiolive.akamaized.net/hls/live/2041036/ES_R1ETR/master.m3u8"
+  },
+  {
+    "id": "4cc6b1aa-5bf4-4fa6-87d2-9c687a854f8a",
+    "name": "Ethio FM 107.8",
+    "key": "4cc6b1aa-5bf4-4fa6-87d2-9c687a854f8a",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Ethiopia",
+    "playlist_url": "https://stream.zeno.fm/72y045deqeruv"
+  },
+  {
+    "id": "96b88cb2-76a4-43fb-9257-e791103f5fa8",
+    "name": "臺北電台",
+    "key": "96b88cb2-76a4-43fb-9257-e791103f5fa8",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Taiwan, Republic Of China",
+    "playlist_url": "https://stream.ginnet.cloud/live0130lo-yfyo/_definst_/fm/playlist.m3u8"
+  },
+  {
+    "id": "0b80555f-eb5c-4fce-94d2-109eec7bee6b",
+    "name": "France Inter",
+    "key": "0b80555f-eb5c-4fce-94d2-109eec7bee6b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · France",
+    "playlist_url": "https://icecast.radiofrance.fr/franceinter-hifi.aac"
+  },
+  {
+    "id": "2c260d07-110c-473c-8a7f-df4b937b31a8",
+    "name": "Radio Manarat",
+    "key": "2c260d07-110c-473c-8a7f-df4b937b31a8",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Morocco",
+    "playlist_url": "https://listen.radioking.com/radio/252934/stream/297385"
+  },
+  {
+    "id": "960c660b-0601-11e8-ae97-52543be04c81",
+    "name": "Sveriges Radio - P1",
+    "key": "960c660b-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Sweden",
+    "playlist_url": "https://live1.sr.se/p1-aac-320"
+  },
+  {
+    "id": "10f16cf6-bc45-4b67-8f17-9758f249a61a",
+    "name": "Deutschlandfunk Kultur | DLF | MP3 128k",
+    "key": "10f16cf6-bc45-4b67-8f17-9758f249a61a",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Germany",
+    "playlist_url": "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3?aggregator=web"
+  },
+  {
+    "id": "26ff53d3-8f2f-4874-850f-3ae964e9712f",
+    "name": "RadioOne",
+    "key": "26ff53d3-8f2f-4874-850f-3ae964e9712f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Albania",
+    "playlist_url": "https://cp1.sednastream.com/proxy/radioone94?mp=/stream"
+  },
+  {
+    "id": "879907df-654a-4a72-989e-b968ab51e818",
+    "name": "Réunion La 1ère",
+    "key": "879907df-654a-4a72-989e-b968ab51e818",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Reunion",
+    "playlist_url": "https://reunion.ice.infomaniak.ch/reunion-128.mp3"
+  },
+  {
+    "id": "38a33fc0-be05-4c98-8c6a-ba3869575bc1",
+    "name": "RAC1",
+    "key": "38a33fc0-be05-4c98-8c6a-ba3869575bc1",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3"
+  },
+  {
+    "id": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
+    "name": "FM ADDIS 97-1",
+    "key": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Ethiopia",
+    "playlist_url": "https://stream.zeno.fm/rb6wbrap7yzuv"
+  },
+  {
+    "id": "acb6af8a-c8e3-4bdb-ae7d-ceedab23e4b7",
+    "name": "Mayotte La 1ère",
+    "key": "acb6af8a-c8e3-4bdb-ae7d-ceedab23e4b7",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Mayotte",
+    "playlist_url": "https://mayotte.ice.infomaniak.ch/mayotte-128.mp3"
+  },
+  {
+    "id": "0e1a47cb-f16d-4169-851a-5985c6133055",
+    "name": "Deutschlandfunk Nova | DLF | MP3 128k",
+    "key": "0e1a47cb-f16d-4169-851a-5985c6133055",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Germany",
+    "playlist_url": "https://st03.sslstream.dlf.de/dlf/03/128/mp3/stream.mp3?aggregator=web"
+  },
+  {
+    "id": "960c4e01-0601-11e8-ae97-52543be04c81",
+    "name": "Sveriges Radio - P3",
+    "key": "960c4e01-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Sweden",
+    "playlist_url": "https://live1.sr.se/p3-aac-320"
+  },
+  {
+    "id": "d592657d-0359-42b7-99cc-fb1fd5388e49",
+    "name": "Radio Ngāti Porou",
+    "key": "d592657d-0359-42b7-99cc-fb1fd5388e49",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · New Zealand",
+    "playlist_url": "https://wowza.iwi.radio/icecast-to-hls/ngrp:NgatiPorou.stream/playlist.m3u8"
+  },
+  {
+    "id": "e2d75665-c4a9-4433-b953-3a5346ae5fb6",
+    "name": "Fred Film Radio(لغة عربية)",
+    "key": "e2d75665-c4a9-4433-b953-3a5346ae5fb6",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Saudi Arabia",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradioar/stream"
+  },
+  {
+    "id": "f27f962c-b42a-4674-9b50-30216165b108",
+    "name": "RTHK Radio 5",
+    "key": "f27f962c-b42a-4674-9b50-30216165b108",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Hong Kong",
+    "playlist_url": "https://rthkaudio5-lh.akamaihd.net/i/radio5_1@355868/index_56_a-p.m3u8"
+  },
+  {
+    "id": "0ab0056c-6b80-11ea-b1cf-52543be04c81",
+    "name": "Pátria Rádió",
+    "key": "0ab0056c-6b80-11ea-b1cf-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Slovakia",
+    "playlist_url": "https://icecast.stv.livebox.sk/patria_128.mp3"
+  },
+  {
+    "id": "f837704e-40df-4302-b546-c8401348e51c",
+    "name": "Radio Republika",
+    "key": "f837704e-40df-4302-b546-c8401348e51c",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · Poland",
+    "playlist_url": "https://ssl-1.radiotvrepublika.pl:12698/stream"
+  },
+  {
+    "id": "92c3f2bd-d985-4998-9632-2e16fbfcab0e",
+    "name": "Kontrafunk (MP3 192)",
+    "key": "92c3f2bd-d985-4998-9632-2e16fbfcab0e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · Switzerland",
+    "playlist_url": "https://stream.kontrafunk.radio/listen/kontrafunk/radio.mp3"
+  },
+  {
+    "id": "76b129aa-45cc-46cf-b6b2-1fde08a2c8f9",
+    "name": "FIP Pop",
+    "key": "76b129aa-45cc-46cf-b6b2-1fde08a2c8f9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · France",
+    "playlist_url": "https://icecast.radiofrance.fr/fippop-hifi.aac"
+  },
+  {
+    "id": "6be26492-2d96-444d-afa6-91fd5b374bed",
+    "name": "臺北電台AM",
+    "key": "6be26492-2d96-444d-afa6-91fd5b374bed",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Taiwan, Republic Of China",
+    "playlist_url": "https://stream.ginnet.cloud/live0130lo-yfyo/_definst_/am/playlist.m3u8"
+  },
+  {
+    "id": "95e91688-897b-4900-9406-ca4b744effdf",
+    "name": "Rai 1 Friuli Venezia Giulia",
+    "key": "95e91688-897b-4900-9406-ca4b744effdf",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Italy",
+    "playlist_url": "https://icestreaming.rai.it/1.mp3"
+  },
+  {
+    "id": "446a3e3d-a2fb-453d-abbd-3369bde1c214",
+    "name": "ΕΡΑσπορ",
+    "key": "446a3e3d-a2fb-453d-abbd-3369bde1c214",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Greece",
+    "playlist_url": "https://radiostreaming.ert.gr/ert-erasport"
+  },
+  {
+    "id": "1653b791-7005-4e95-be20-4e7b626a4a20",
+    "name": "Sky News Australia Radio",
+    "key": "1653b791-7005-4e95-be20-4e7b626a4a20",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · Australia",
+    "playlist_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_SKYNEWSAAC.aac"
+  },
+  {
+    "id": "b4489557-58f3-4971-bc3a-c57c9a6b497d",
+    "name": "ΕΡΤ Kosmos",
+    "key": "b4489557-58f3-4971-bc3a-c57c9a6b497d",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Greece",
+    "playlist_url": "https://radiostreaming.ert.gr/ert-kosmos"
+  },
+  {
+    "id": "48acbf47-f731-4c22-91b2-385d2fbb76c9",
+    "name": "MR1 - Kossuth Rádió",
+    "key": "48acbf47-f731-4c22-91b2-385d2fbb76c9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Hungary",
+    "playlist_url": "https://mr-stream.connectmedia.hu/4736/mr1.mp3"
+  },
+  {
+    "id": "70e8dcc9-5f8e-4225-8d8e-e7487a3791f5",
+    "name": "WOSU 89.7 NPR News",
+    "key": "70e8dcc9-5f8e-4225-8d8e-e7487a3791f5",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United States Of America",
+    "playlist_url": "https://wosu.streamguys1.com/NPR_128"
+  },
+  {
+    "id": "7c6d8cee-8c48-4895-b960-8103f6373508",
+    "name": "香港普通话台",
+    "key": "7c6d8cee-8c48-4895-b960-8103f6373508",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Hong Kong",
+    "playlist_url": "https://rthkradiopth-live.akamaized.net/hls/live/2040082/radiopth/master.m3u8"
+  },
+  {
+    "id": "3951ff60-8bd1-11e9-ad01-52543be04c81",
+    "name": "Radio Antalya",
+    "key": "3951ff60-8bd1-11e9-ad01-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Türkiye",
+    "playlist_url": "https://my.radiolize.com/radio/8000/radio.mp3"
+  },
+  {
+    "id": "afebc420-e448-4299-ad01-52f630f0e14f",
+    "name": "KPBS",
+    "key": "afebc420-e448-4299-ad01-52f630f0e14f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United States Of America",
+    "playlist_url": "https://kpbs.streamguys1.com/kpbs-mp3"
+  },
+  {
+    "id": "59ff05a8-bba6-4b42-ab6c-6a6f5355c92b",
+    "name": "Bremen Zwei NEU",
+    "key": "59ff05a8-bba6-4b42-ab6c-6a6f5355c92b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Germany",
+    "playlist_url": "https://icecast.radiobremen.de/rb/bremenzwei/live/mp3/128/stream.mp3"
+  },
+  {
+    "id": "962c1da9-0601-11e8-ae97-52543be04c81",
+    "name": "Sveriges Radio - P4 Plus",
+    "key": "962c1da9-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Sweden",
+    "playlist_url": "https://live1.sr.se/p4plus-aac-320"
+  },
+  {
+    "id": "5a2cbfe7-0518-44e9-aca6-0fd41e466ff0",
+    "name": "Fred Film Radio(日本語)",
+    "key": "5a2cbfe7-0518-44e9-aca6-0fd41e466ff0",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Japan",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradiojp/stream"
+  },
+  {
+    "id": "53ec59f3-9b3f-41b3-b5d3-89fecf58ec78",
+    "name": "济南故事广播",
+    "key": "53ec59f3-9b3f-41b3-b5d3-89fecf58ec78",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · China",
+    "playlist_url": "https://lhttp.qtfm.cn/live/1672/64k.mp3"
+  },
+  {
+    "id": "3fb37778-628e-4799-bb76-cd2813a85464",
+    "name": "RTHK radio 3",
+    "key": "3fb37778-628e-4799-bb76-cd2813a85464",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Hong Kong",
+    "playlist_url": "https://rthkaudio3-lh.akamaihd.net/i/radio3_1@355866/index_56_a-p.m3u8"
+  },
+  {
+    "id": "dff9392e-26ba-4874-af56-5e4ddbefc270",
+    "name": "CBC Radio 1 Vancouver",
+    "key": "dff9392e-26ba-4874-af56-5e4ddbefc270",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://cbcradiolive.akamaized.net/hls/live/2041050/ES_R1PVC/master.m3u8"
+  },
+  {
+    "id": "70fdae0c-8528-11e9-aa30-52543be04c81",
+    "name": "Radio Hamrah رادیو همراه",
+    "key": "70fdae0c-8528-11e9-aa30-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United States Of America",
+    "playlist_url": "https://stream.zenolive.com/gxdq0awu30duv.aac"
+  },
+  {
+    "id": "960c00d8-54f0-48d8-88f2-6636a1e53547",
+    "name": "KQED 128 AAC",
+    "key": "960c00d8-54f0-48d8-88f2-6636a1e53547",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · The United States Of America",
+    "playlist_url": "https://hls.kqed.org/hls/kqed_app/playlist.m3u8"
+  },
+  {
+    "id": "017d9e5d-bb7b-4af6-b664-6da2d7097c1a",
+    "name": "All India Radio Neighbourhood Service 1",
+    "key": "017d9e5d-bb7b-4af6-b664-6da2d7097c1a",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · India",
+    "playlist_url": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio233/hlspbaudio233_Auto.m3u8"
+  },
+  {
+    "id": "5e7d27fd-478a-458e-9a3f-85e47332a011",
+    "name": "Radio Notre Dame (lower bitrate)",
+    "key": "5e7d27fd-478a-458e-9a3f-85e47332a011",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · France",
+    "playlist_url": "https://windu.radionotredame.net/RadioNotreDame-Fm.mp3"
+  },
+  {
+    "id": "95c2beb2-7c97-435c-b2e8-0cafcbae1d37",
+    "name": "CBC Radio One Montréal",
+    "key": "95c2beb2-7c97-435c-b2e8-0cafcbae1d37",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://cbcradiolive.akamaized.net/hls/live/2041030/ES_R1EMT/master.m3u8"
+  },
+  {
+    "id": "46c79dfa-1a99-4139-a052-81c434f259dd",
+    "name": "Fred Film Radio(中文)",
+    "key": "46c79dfa-1a99-4139-a052-81c434f259dd",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · China",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradiocn/stream"
+  },
+  {
+    "id": "9b8167c1-2f58-4ac1-8ce4-721ea2677232",
+    "name": "NetTalk America",
+    "key": "9b8167c1-2f58-4ac1-8ce4-721ea2677232",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · The United States Of America",
+    "playlist_url": "https://stream.zeno.fm/st9bhqvgvceuv"
+  },
+  {
+    "id": "3b232427-05ab-4193-af6e-b19bf8e78963",
+    "name": "NPO Radio 4",
+    "key": "3b232427-05ab-4193-af6e-b19bf8e78963",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The Netherlands",
+    "playlist_url": "https://icecast.omroep.nl:80/radio4-bb-mp3"
+  },
+  {
+    "id": "582b52b0-6935-442d-8106-592bbb08937a",
+    "name": "Radio America 1",
+    "key": "582b52b0-6935-442d-8106-592bbb08937a",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · The United States Of America",
+    "playlist_url": "https://s6.yesstreaming.net:18003/ra1"
+  },
+  {
+    "id": "3934d9f0-7694-4896-bf11-fb19395c7c49",
+    "name": "LRA1 Radio Nacional Argentina",
+    "key": "3934d9f0-7694-4896-bf11-fb19395c7c49",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Argentina",
+    "playlist_url": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad1"
+  },
+  {
+    "id": "3a5b3c97-1204-4a47-bf97-6bc08eba38b9",
+    "name": "RTHK Radio 8 央廣粵港澳大灣區之聲",
+    "key": "3a5b3c97-1204-4a47-bf97-6bc08eba38b9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Hong Kong",
+    "playlist_url": "https://rthkradiocmgrgb-live.akamaized.net/hls/live/2046112/radiocmgrgb/master.m3u8"
+  },
+  {
+    "id": "3cb76cc7-fa20-4c22-b33c-5268a2437e38",
+    "name": "ABC Country HLS",
+    "key": "3cb76cc7-fa20-4c22-b33c-5268a2437e38",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Australia",
+    "playlist_url": "https://mediaserviceslive.akamaized.net/hls/live/2038322/abccountry/index.m3u8"
+  },
+  {
+    "id": "750a13d3-da2a-49b8-ab43-b4a425b975b1",
+    "name": "Звезда 95.6 FM",
+    "key": "750a13d3-da2a-49b8-ab43-b4a425b975b1",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Ideas & culture · The Russian Federation",
+    "playlist_url": "https://radio.mediacdn.ru/radio/zvezda/zvezda_96"
+  },
+  {
+    "id": "c1f742d6-b2c4-4b73-a9ad-30ddf194345e",
+    "name": "ČRO Radiožurnál Sport",
+    "key": "c1f742d6-b2c4-4b73-a9ad-30ddf194345e",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Czechia",
+    "playlist_url": "https://rozhlas.stream/radiozurnal_sport_high.aac"
+  },
+  {
+    "id": "884b8ccd-d770-4f9a-a504-126c99829b47",
+    "name": "Lider FM 107,4",
+    "key": "884b8ccd-d770-4f9a-a504-126c99829b47",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Republic Of North Macedonia",
+    "playlist_url": "https://liderfm.ipradio.mk/"
+  },
+  {
+    "id": "12cfc0d8-0ff1-4dcb-9c63-1f8f46538dc9",
+    "name": "Radio Onda Rossa",
+    "key": "12cfc0d8-0ff1-4dcb-9c63-1f8f46538dc9",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · Italy",
+    "playlist_url": "https://s.streampunk.cc/ondarossa.ogg"
+  },
+  {
+    "id": "c1fb30d3-5843-4116-a6a9-b8d89b839bf6",
+    "name": "Metraf FM 103.7 Dakar",
+    "key": "c1fb30d3-5843-4116-a6a9-b8d89b839bf6",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Senegal",
+    "playlist_url": "https://stream.zeno.fm/66yrv69ffv8uv"
+  },
+  {
+    "id": "a7d3f6fb-9b43-44dd-96cd-f8035d647e50",
+    "name": "France Bleu Alsace",
+    "key": "a7d3f6fb-9b43-44dd-96cd-f8035d647e50",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · France",
+    "playlist_url": "https://icecast.radiofrance.fr/fbalsace-midfi.mp3"
+  },
+  {
+    "id": "3e7ad9d1-17e6-4b74-a5b7-9d5654c20d3c",
+    "name": "RTHK Radio 6 央廣香港之聲",
+    "key": "3e7ad9d1-17e6-4b74-a5b7-9d5654c20d3c",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Hong Kong",
+    "playlist_url": "https://rthkradiocnrhk-live.akamaized.net/hls/live/2046111/radiocnrhk/master.m3u8"
+  },
+  {
+    "id": "b52583a4-0da1-4c32-b917-a229f9d3a122",
+    "name": "RTHK Radio 1",
+    "key": "b52583a4-0da1-4c32-b917-a229f9d3a122",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Hong Kong",
+    "playlist_url": "https://rthkradio1-live.akamaized.net/hls/live/2035313/radio1/master.m3u8"
+  },
+  {
+    "id": "96260fdb-0601-11e8-ae97-52543be04c81",
+    "name": "WKYU 88.9 \"WKU Public Radio\" Bowling Green, KY",
+    "key": "96260fdb-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United States Of America",
+    "playlist_url": "https://dal-wku-stream-1.neighborhoodca.com/stream"
+  },
+  {
+    "id": "46cf1e33-0544-4277-bd63-a95d1fa32887",
+    "name": "Radio Oxygène Isère",
+    "key": "46cf1e33-0544-4277-bd63-a95d1fa32887",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · France",
+    "playlist_url": "https://streamingp.shoutcast.com/radio-oxygene-grenoble-aac"
+  },
+  {
+    "id": "6b5949de-b9ea-4aa1-af15-17dbd30b1b19",
+    "name": "CBC Radio One - Ottawa, ON (MP3 stream)",
+    "key": "6b5949de-b9ea-4aa1-af15-17dbd30b1b19",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://29243.live.streamtheworld.com/CBOFM_CBC_SC"
+  },
+  {
+    "id": "0741fb0c-e2fb-4f03-83fb-02cfd6d8ff92",
+    "name": "FM 101 Sargodha",
+    "key": "0741fb0c-e2fb-4f03-83fb-02cfd6d8ff92",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Pakistan",
+    "playlist_url": "https://whmsonic.radio.gov.pk:8040/relay"
+  },
+  {
+    "id": "20bcbbc0-75b1-43ab-9919-6230ce0d8bba",
+    "name": "Soho Radio London",
+    "key": "20bcbbc0-75b1-43ab-9919-6230ce0d8bba",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://sohoradiomusic.doughunt.co.uk:8010/128mp3"
+  },
+  {
+    "id": "db2cb556-1f5d-11ea-a955-52543be04c81",
+    "name": "Radio West",
+    "key": "db2cb556-1f5d-11ea-a955-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio",
+    "playlist_url": "https://liveradio.omroepwest.nl/"
+  },
+  {
+    "id": "160ad93c-7e74-11ea-8a3b-52543be04c81",
+    "name": "KUOW Seattle",
+    "key": "160ad93c-7e74-11ea-8a3b-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio",
+    "playlist_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KUOWFM_HIGH_MP3.mp3?ck=1586884589483"
+  },
+  {
+    "id": "81a41011-330f-46b3-be46-a10cf8cdc3b0",
+    "name": "Radio Ici & Maintenant",
+    "key": "81a41011-330f-46b3-be46-a10cf8cdc3b0",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · France",
+    "playlist_url": "https://s64.radiolize.com/radio/8090/radio.mp3"
+  },
+  {
+    "id": "070e2ca5-7b88-11e9-aa30-52543be04c81",
+    "name": "No Agenda Show Stream (pls)",
+    "key": "070e2ca5-7b88-11e9-aa30-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · The United States Of America",
+    "playlist_url": "https://listen.noagendastream.com/noagenda"
+  },
+  {
+    "id": "8b5d407b-dc32-11e9-a8ba-52543be04c81",
+    "name": "Heart South Wales",
+    "key": "8b5d407b-dc32-11e9-a8ba-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://media-ssl.musicradio.com/HeartSouthWalesMP3"
+  },
+  {
+    "id": "a434678c-3198-4293-9819-707b183c0215",
+    "name": "CBC Radio One - Vancouver, BC (MP3 stream)",
+    "key": "a434678c-3198-4293-9819-707b183c0215",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://18303.live.streamtheworld.com/CBU2FM_CBC_SC"
+  },
+  {
+    "id": "3ac246bf-557d-4c62-ae77-e8f1f928897b",
+    "name": "Radio Gelderland",
+    "key": "3ac246bf-557d-4c62-ae77-e8f1f928897b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · The Netherlands",
+    "playlist_url": "https://d2od87akyl46nm.cloudfront.net/icecast/omroepgelderland/radiogelderland"
+  },
+  {
+    "id": "78ea6284-d457-439a-b133-f35a444d895b",
+    "name": "Гэр бүлийн радио 104.5",
+    "key": "78ea6284-d457-439a-b133-f35a444d895b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Mongolia",
+    "playlist_url": "https://c2.radioboss.fm/stream/394"
+  },
+  {
+    "id": "2e789a5c-c032-4bf1-8da9-04ab7944cb04",
+    "name": "Radio Agricultura",
+    "key": "2e789a5c-c032-4bf1-8da9-04ab7944cb04",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Chile",
+    "playlist_url": "https://unlimited4-us.dps.live/agricultura/gotardis/audio/now/livestream1.m3u8"
+  },
+  {
+    "id": "a8067725-3d72-406f-828b-9ba72f638479",
+    "name": "Radio Pakistan D.I. Khan MW 711",
+    "key": "a8067725-3d72-406f-828b-9ba72f638479",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Pakistan",
+    "playlist_url": "https://whmsonic.radio.gov.pk:7000/Dikhan"
+  },
+  {
+    "id": "96412afe-0601-11e8-ae97-52543be04c81",
+    "name": "Sveriges Radio - Ekot sänder direkt",
+    "key": "96412afe-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Sweden",
+    "playlist_url": "https://live1.sr.se/ekotdirekt-aac-320"
+  },
+  {
+    "id": "83cd32c9-2461-468f-afe8-4be8e5a4ee23",
+    "name": "内蒙古草原之声 Inner Mongolia Voice of Grassland",
+    "key": "83cd32c9-2461-468f-afe8-4be8e5a4ee23",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Mongolia",
+    "playlist_url": "https://lhttp-hw.qtfm.cn/live/20973/64k.mp3"
+  },
+  {
+    "id": "4bb85759-d22b-433b-b256-29ad8a6e9ecd",
+    "name": "CBC Radio One - Toronto, ON (MP3 stream)",
+    "key": "4bb85759-d22b-433b-b256-29ad8a6e9ecd",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://26733.live.streamtheworld.com/CBLAFM_CBC_SC"
+  },
+  {
+    "id": "c73b9eff-0ac5-4a43-b05a-346591c66675",
+    "name": "Monocle Radio",
+    "key": "c73b9eff-0ac5-4a43-b05a-346591c66675",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · The United Kingdom Of Great Britain And Northern Ireland",
+    "playlist_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MONOCLE_24.mp3"
+  },
+  {
+    "id": "961df649-0601-11e8-ae97-52543be04c81",
+    "name": "WETS 89.5 Johnson City, TN",
+    "key": "961df649-0601-11e8-ae97-52543be04c81",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · The United States Of America",
+    "playlist_url": "https://wets-fm.streamguys1.com/live-1"
+  },
+  {
+    "id": "7b6aca3d-dfa3-47dd-9f57-820b04c3f339",
+    "name": "FIP",
+    "key": "7b6aca3d-dfa3-47dd-9f57-820b04c3f339",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · France",
+    "playlist_url": "https://stream.radiofrance.fr/fip/fip.m3u8"
+  },
+  {
+    "id": "9431e482-e831-4c69-b132-13f174e126ea",
+    "name": "La 1ere Saint Pierre et Miquelon (975)",
+    "key": "9431e482-e831-4c69-b132-13f174e126ea",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Saint Pierre And Miquelon",
+    "playlist_url": "https://saint-pierreetmiquelon.ice.infomaniak.ch/saint-pierreetmiquelon-128.mp3"
+  },
+  {
+    "id": "5a71813c-32f6-472e-8db1-51ccbe37cc19",
+    "name": "Radio Pakistan Karachi MW 639",
+    "key": "5a71813c-32f6-472e-8db1-51ccbe37cc19",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Pakistan",
+    "playlist_url": "https://whmsonic.radio.gov.pk:7000/MW639khi"
+  },
+  {
+    "id": "ce2090b8-76eb-4bf7-9352-e2c2f3cd9ffb",
+    "name": "RNE Radio 5 Las Palmas",
+    "key": "ce2090b8-76eb-4bf7-9352-e2c2f3cd9ffb",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://d121.rndfnk.com/star/crtve/rne5/lpa/mp3/128/stream.mp3?cid=01GEP4X9Y3EYSQDV2G2MRTWGGZ&sid=2KXdzbu8f6MPAaCmdrAfA7scSHY&token=wiTLRflaxoLHseM8UraPggqszRT9NNr2mUoTnKi8TdU&tvf=6Up4UpPDOxdkMTIxLnJuZGZuay5jb20"
+  },
+  {
+    "id": "2b1b77a5-16d9-49eb-9359-38341f5674e4",
+    "name": "Fred Film Radio(한국어)",
+    "key": "2b1b77a5-16d9-49eb-9359-38341f5674e4",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · The Republic Of Korea",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradiokr/stream"
+  },
+  {
+    "id": "db40900f-da30-44c1-84d0-1fb235daf393",
+    "name": "FM 101 Khairpur",
+    "key": "db40900f-da30-44c1-84d0-1fb235daf393",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Pakistan",
+    "playlist_url": "https://whmsonic.radio.gov.pk:8054/stream"
+  },
+  {
+    "id": "d967c562-13e4-4d1f-9027-2fd81277b594",
+    "name": "RRI Pro 4 Ambon",
+    "key": "d967c562-13e4-4d1f-9027-2fd81277b594",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Indonesia",
+    "playlist_url": "https://stream-node2.rri.co.id/streaming/15/9315/rriambonpro4.mp3"
+  },
+  {
+    "id": "740d2a3c-8f44-40a4-821d-932bcb61e31b",
+    "name": "Fred Film Radio(Español)",
+    "key": "740d2a3c-8f44-40a4-821d-932bcb61e31b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradiosp/stream"
+  },
+  {
+    "id": "162edc5a-2882-4958-9063-44a51b430e06",
+    "name": "Magic FM",
+    "key": "162edc5a-2882-4958-9063-44a51b430e06",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Talk radio · Romania",
+    "playlist_url": "https://live.magicfm.ro/magicfm.aacp"
+  },
+  {
+    "id": "e9e2c2ac-1916-4f2e-a7ba-a3669bea3bcd",
+    "name": "CBC Radio One Edmonton",
+    "key": "e9e2c2ac-1916-4f2e-a7ba-a3669bea3bcd",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "News talk · Canada",
+    "playlist_url": "https://26373.live.streamtheworld.com/CBXAM_CBC_SC"
+  },
+  {
+    "id": "0810a990-a85a-472c-ba9c-f18af750a19f",
+    "name": "esRadio Granada",
+    "key": "0810a990-a85a-472c-ba9c-f18af750a19f",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://azura.abcorp.es/listen/esradio_granada/radio.mp3"
+  },
+  {
+    "id": "ff97ca68-d11f-4c3d-ad11-1a770abd1772",
+    "name": "Fred Film Radio(italiano)",
+    "key": "ff97ca68-d11f-4c3d-ad11-1a770abd1772",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Italy",
+    "playlist_url": "https://s10.webradio-hosting.com/proxy/fredradioit/stream"
+  },
+  {
+    "id": "40ffb457-e19b-42d1-a14b-b70756629bac",
+    "name": "Radio Martino",
+    "key": "40ffb457-e19b-42d1-a14b-b70756629bac",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Greece",
+    "playlist_url": "https://eu1.fastcast4u.com/proxy/radiomartino?mp=/1"
+  },
+  {
+    "id": "0842377e-9c21-4567-a326-6303a48b0ea1",
+    "name": "FPP Fréquence Paris Plurielle rfpp",
+    "key": "0842377e-9c21-4567-a326-6303a48b0ea1",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Politics talk · France",
+    "playlist_url": "https://direct.rfpp.net/fpp.mp3"
+  },
+  {
+    "id": "e74ee1ad-f277-4d6f-9bfe-7bc17734fa2b",
+    "name": "Eixample Barcelona Radio",
+    "key": "e74ee1ad-f277-4d6f-9bfe-7bc17734fa2b",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://directe.eixamplebarcelonaradio.com:8443/radioOnline"
+  },
+  {
+    "id": "f699dc00-089f-48d6-b8ae-819562183577",
+    "name": "Intimidad Radio",
+    "key": "f699dc00-089f-48d6-b8ae-819562183577",
+    "item_type": "radio",
+    "network": "radiobrowser",
+    "description": "Culture talk · Spain",
+    "playlist_url": "https://eu1.lhdserver.es:9119/stream"
   }
 ]
