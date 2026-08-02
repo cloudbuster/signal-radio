@@ -9,6 +9,15 @@
   outline-offset: 2px;
 }
 
+/* Inputs that already show their own focus state via a border-color change
+   (search bar's bottom border, browse-drawer fields) opt out of the ring
+   above with Tailwind's outline-none -- but that utility and :focus-visible
+   have equal specificity, and this stylesheet loads after tailwind.css, so
+   without this override the ring would win the cascade tie and double up. */
+.outline-none:focus-visible {
+  outline: none;
+}
+
 /* ---------- preset rail ---------- */
 
 .preset-btn {
